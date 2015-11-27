@@ -5,6 +5,13 @@ import android.app.Activity;
 import android.view.Menu;
 
 public class Calculator extends Activity {
+	
+	TCButton[] tcbuttons;
+	ACButton ac;
+	DeleteButton delete;
+	EqualsButton equals;
+	static TCCalculation currentCalculation;
+	TCCalculationHistory calculationHistory; 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
