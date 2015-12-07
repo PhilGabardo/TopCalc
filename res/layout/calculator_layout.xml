@@ -105,6 +105,142 @@
             android:background="#0f8"
             android:orientation="vertical" >
             
+            
+            <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+            
+            <LinearLayout
+                                  android:id="@+id/Col8"
+                                  android:layout_width="match_parent"
+                                   android:layout_height="0dp"
+                                  android:layout_weight="4"
+                                  android:background="#966"
+                                  android:orientation="vertical"
+                                  
+                                   >
+                                   
+             <LinearLayout
+                                  android:id="@+id/Col8"
+                                  android:layout_width="match_parent"
+                                   android:layout_height="0dp"
+                                  android:layout_weight="1"
+                                  android:background="#966"
+                                  android:orientation="horizontal"
+                                  
+                                   > 
+                                   <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                   <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                   <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                   
+                 
+                                   </LinearLayout>
+                                   
+                                   <LinearLayout
+                                  android:id="@+id/Col8"
+                                  android:layout_width="match_parent"
+                                   android:layout_height="0dp"
+                                  android:layout_weight="1"
+                                  android:background="#966"
+                                  android:orientation="horizontal"
+                                  
+                                   >
+                                       <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                       <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                       <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                   </LinearLayout>   
+                                   <LinearLayout
+                                  android:id="@+id/Col8"
+                                  android:layout_width="match_parent"
+                                   android:layout_height="0dp"
+                                  android:layout_weight="1"
+                                  android:background="#966"
+                                  android:orientation="horizontal"
+                                  
+                                   >
+                                       <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                       <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                       <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                   </LinearLayout>  
+                                   
+                                   <LinearLayout
+                                  android:id="@+id/Col8"
+                                  android:layout_width="match_parent"
+                                   android:layout_height="0dp"
+                                  android:layout_weight="1"
+                                  android:background="#966"
+                                  android:orientation="horizontal"
+                                  
+                                   >
+                                       <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                       <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                       <pnj.project.topcalc.DeleteButton
+            android:id="@+id/AnswerButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="u" />
+                                   </LinearLayout> 
+            
+            </LinearLayout>
         </LinearLayout>
         
         <LinearLayout
