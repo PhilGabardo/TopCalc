@@ -13,7 +13,7 @@ public class TCButton extends Button implements OnClickListener{
 	
 	String label;
 	String description;
-	String expression;
+	String term;
 	Type type;
 	
 	
@@ -23,7 +23,7 @@ public class TCButton extends Button implements OnClickListener{
 	}
 	
 	public boolean isPressable(){
-		Type lastType = Calculator.currentCalculation.currentCalculation.expression.get(Calculator.currentCalculation.expression.size()-1).type;
+		Type lastType = Calculator.currentCalculation.getCurrentCalculation().expression.get(Calculator.currentCalculation.expression.size()-1).type;
 		if (type == Type.NON_MINUS_OPERATOR){
 			if (lastType == Type.DECIMAL){
 				return false;
@@ -50,8 +50,6 @@ public class TCButton extends Button implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		Calculator.currentCalculation.expression.add(this);
-		
-		
+		Calculator.currentCalculation.add(this);
 	}
 }

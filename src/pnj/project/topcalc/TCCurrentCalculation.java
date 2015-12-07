@@ -8,32 +8,45 @@ public class TCCurrentCalculation extends TextView{
 	
 	public TCCurrentCalculation(Context context) {
 		super(context);
-		currentCalculation = new TCCalculation();
+		setCurrentCalculation(new TCCalculation());
 	}
 	
 	public void reset(){
-		currentCalculation = new TCCalculation();
+		setCurrentCalculation(new TCCalculation());
 		updateDisplay();
 	}
 	
 	public void deleteLast(){
-		if (currentCalculation.expression.size() > 0){
-			currentCalculation.expression.remove(currentCalculation.expression.size()-1);
+		if (getCurrentCalculation().expression.size() > 0){
+			getCurrentCalculation().expression.remove(getCurrentCalculation().expression.size()-1);
 			updateDisplay();
 		}
 	}
 	
+	public void add(TCButton term){
+		getCurrentCalculation().expression.add(term);
+		updateDisplay();
+	}
+	
 	
 	public void updateDisplay(){
-		this.setText(currentCalculation.toString());
+		this.setText(getCurrentCalculation().toString());
 	}
 
 	public void compute() {
-		currentCalculation.calculate();
+		getCurrentCalculation().calculate();
 		TCCalculationHistory.history.add(this);
 		reset();
 		updateDisplay();
 		
+	}
+
+	public TCCalculation getCurrentCalculation() {
+		return currentCalculation;
+	}
+
+	public void setCurrentCalculation(TCCalculation currentCalculation) {
+		this.currentCalculation = currentCalculation;
 	}
 
 }
