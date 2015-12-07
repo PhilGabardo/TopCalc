@@ -1,13 +1,14 @@
 package pnj.project.topcalc;
 
 import android.content.Context;
+import android.util.AttributeSet;
 import android.widget.TextView;
 
 public class TCCurrentCalculation extends TextView{
 	private TCCalculation currentCalculation;
 	
-	public TCCurrentCalculation(Context context) {
-		super(context);
+	public TCCurrentCalculation(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
 		setCurrentCalculation(new TCCalculation());
 	}
 	
