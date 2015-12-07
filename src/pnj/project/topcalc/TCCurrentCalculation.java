@@ -10,19 +10,23 @@ public class TCCurrentCalculation extends TextView{
 	
 	public TCCurrentCalculation(Context context) {
 	    super(context);
+	    setCurrentCalculation(new TCCalculation());
 	}
 
 	public TCCurrentCalculation(Context context, AttributeSet attrs) {
 	    super(context, attrs);
+	    setCurrentCalculation(new TCCalculation());
 	}
 
 	public TCCurrentCalculation(Context context, AttributeSet attrs, int defStyleAttr) {
 	    super(context, attrs, defStyleAttr);
+	    setCurrentCalculation(new TCCalculation());
 	}
 
 	@TargetApi(21)
 	public TCCurrentCalculation(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
 	    super(context, attrs, defStyleAttr);
+	    setCurrentCalculation(new TCCalculation());
 	}
 
 	
@@ -59,6 +63,7 @@ public class TCCurrentCalculation extends TextView{
 		getCurrentCalculation().calculate();
 		Calculator.calculationHistory.add(this);
 		Calculator.calculationHistory.resetIndex();
+		Calculator.calculationHistory.update();
 		Calculator.answer.update();
 		reset();
 		updateDisplay();
@@ -78,6 +83,15 @@ public class TCCurrentCalculation extends TextView{
 			return null;
 		}
 		return getLast().type;
+	}
+	
+	public String toString(){
+		String s = "";
+		for (TCTermButton term: currentCalculation.expression){
+			s += term.term;
+		}
+		s += "=" + currentCalculation.answer;
+		return s;
 	}
 
 }

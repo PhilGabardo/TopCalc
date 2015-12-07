@@ -2,12 +2,9 @@ package pnj.project.topcalc;
 
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.widget.Button;
 import android.util.AttributeSet;
-import android.view.View;
-import android.view.View.OnClickListener;
 
-public class EqualsButton extends TCButton implements OnClickListener{
+public class EqualsButton extends TCButton{
 
 
 	public EqualsButton(Context context) {
@@ -26,9 +23,11 @@ public class EqualsButton extends TCButton implements OnClickListener{
 	public EqualsButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
 	    super(context, attrs, defStyleAttr);
 	}
+	
 	@Override
 	public void action() {
 		Calculator.currentCalculation.compute();
+		
 		
 	}
 	

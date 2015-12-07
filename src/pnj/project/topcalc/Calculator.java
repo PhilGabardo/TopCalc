@@ -1,12 +1,14 @@
 package pnj.project.topcalc;
 
+import java.util.ArrayList;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
 public class Calculator extends Activity {
 	
-	static TCTermButton[] tcbuttons;
+	static ArrayList<TCTermButton> tcTermButtons;
 	static ACButton ac;
 	static DeleteButton delete;
 	static EqualsButton equals;

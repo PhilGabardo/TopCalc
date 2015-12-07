@@ -13,6 +13,18 @@
         android:layout_height="wrap_content"
         android:background="#0f0"
         android:orientation="horizontal" >
+        <pnj.project.topcalc.DeleteButton 
+            android:id="@+id/DeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"/>
+        <pnj.project.topcalc.TCCurrentCalculation 
+            android:id="@+id/DeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x">
+            </pnj.project.topcalc.TCCurrentCalculation>
+        
     <LinearLayout
         android:id="@+id/PrevnCurrentBox"
         android:layout_width="match_parent"
@@ -35,11 +47,7 @@
         </TextView>
         
         </LinearLayout>
-        <pnj.project.topcalc.DeleteButton 
-            android:id="@+id/DeleteButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="x"/>
+        
              
            
 	</LinearLayout>

@@ -3,9 +3,8 @@ package pnj.project.topcalc;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.util.AttributeSet;
-import android.view.View.OnClickListener;
 
-public class ACButton extends TCButton implements OnClickListener{
+public class ACButton extends TCButton{
 
 	public ACButton(Context context) {
 	    super(context);
@@ -28,8 +27,9 @@ public class ACButton extends TCButton implements OnClickListener{
 	@Override
 	public void action() {
 		Calculator.currentCalculation.reset();
-		// TODO Auto-generated method stub
 		
 	}
+	
+	
 
 }

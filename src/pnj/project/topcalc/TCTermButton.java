@@ -2,12 +2,9 @@ package pnj.project.topcalc;
 
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.widget.Button;
 import android.util.AttributeSet;
-import android.view.View;
-import android.view.View.OnClickListener;
 
-public class TCTermButton extends TCButton implements OnClickListener{
+public class TCTermButton extends TCButton{
 	
 	public TCTermButton(Context context) {
 	    super(context);
