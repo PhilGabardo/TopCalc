@@ -73,14 +73,14 @@
                                   
                                    >
                                    <pnj.project.topcalc.TCTermButton
-                                       android:id="@+id/xpowy"
+                                       android:id="@+id/leftBracket"
                                        android:layout_width="0dp"
                                        android:layout_height="match_parent"
                                        android:layout_weight="1"
                                        android:text="u" />
 
                                    <pnj.project.topcalc.TCTermButton
-            android:id="@+id/xpowy"
+            android:id="@+id/rightBracket"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -96,14 +96,14 @@
                                   
                                    >
                                    <pnj.project.topcalc.TCTermButton
-                                       android:id="@+id/xpowy"
+                                       android:id="@+id/xSquared"
                                        android:layout_width="0dp"
                                        android:layout_height="match_parent"
                                        android:layout_weight="1"
                                        android:text="u" />
 
                                    <pnj.project.topcalc.TCTermButton
-            android:id="@+id/xpowy"
+            android:id="@+id/xCubed"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -192,8 +192,8 @@
             android:orientation="vertical" >
             
             
-            <pnj.project.topcalc.TCTermButton
-            android:id="@+id/xpowy"
+            <pnj.project.topcalc.TCAnswerButton
+            android:id="@+id/answerButton"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -220,7 +220,7 @@
                                    > 
 
                                    <pnj.project.topcalc.TCTermButton
-                                       android:id="@+id/xpowy"
+                                       android:id="@+id/xPowY"
                                        android:layout_width="0dp"
                                        android:layout_height="match_parent"
                                        android:layout_weight="1"
@@ -352,16 +352,20 @@
 					android:layout_weight="1" android:background="#966"
 					android:orientation="vertical">
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.ACButton
+					    android:id="@+id/ACButton"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="div" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/seven"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="x" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/four"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="min" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/one"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="plus" />
 				
@@ -372,16 +376,20 @@
 					android:layout_weight="1" android:background="#966"
 					android:orientation="vertical">
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.DeleteButton
+					    android:id="@+id/deleteButton"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="div" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/eight"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="x" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/five"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="min" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/two"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="plus" />
 			
@@ -391,7 +399,7 @@
 				
 
 
-				<pnj.project.topcalc.TCButton
+				<pnj.project.topcalc.TCTermButton
 					android:id="@+id/zero" android:layout_width="match_parent"
 					android:layout_height="0dp" android:layout_weight="1" android:text="0" />
 
@@ -409,19 +417,24 @@
 					android:layout_weight="1" android:background="#966"
 					android:orientation="vertical">
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/percent"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="div" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/nine"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="x" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/six"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="min" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/three"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="plus" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/decimal"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="eq" />
 
@@ -432,23 +445,28 @@
 					android:layout_weight="1" android:background="#994"
 					android:orientation="vertical">
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/divide"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="div" />
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/multiply"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="x" />
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/subtract"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="min" />
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/add"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="plus" />
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
+					    android:id="@+id/equals"
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="eq" />
 
@@ -469,16 +487,16 @@
 						android:layout_weight="1" android:background="#966"
 						android:orientation="vertical">
 
-						<pnj.project.topcalc.TCButton
+						<pnj.project.topcalc.TCTermButton
 							android:layout_width="match_parent" android:layout_height="wrap_content"
 							android:layout_weight="1" android:text="div" />
-						<pnj.project.topcalc.TCButton
+						<pnj.project.topcalc.TCTermButton
 							android:layout_width="match_parent" android:layout_height="wrap_content"
 							android:layout_weight="1" android:text="x" />
-						<pnj.project.topcalc.TCButton
+						<pnj.project.topcalc.TCTermButton
 							android:layout_width="match_parent" android:layout_height="wrap_content"
 							android:layout_weight="1" android:text="min" />
-						<pnj.project.topcalc.TCButton
+						<pnj.project.topcalc.TCTermButton
 							android:layout_width="match_parent" android:layout_height="wrap_content"
 							android:layout_weight="1" android:text="plus" />
 
@@ -489,16 +507,16 @@
 						android:layout_weight="1" android:background="#966"
 						android:orientation="vertical">
 
-						<pnj.project.topcalc.TCButton
+						<pnj.project.topcalc.TCTermButton
 							android:layout_width="match_parent" android:layout_height="wrap_content"
 							android:layout_weight="1" android:text="div" />
-						<pnj.project.topcalc.TCButton
+						<pnj.project.topcalc.TCTermButton
 							android:layout_width="match_parent" android:layout_height="wrap_content"
 							android:layout_weight="1" android:text="x" />
-						<pnj.project.topcalc.TCButton
+						<pnj.project.topcalc.TCTermButton
 							android:layout_width="match_parent" android:layout_height="wrap_content"
 							android:layout_weight="1" android:text="min" />
-						<pnj.project.topcalc.TCButton
+						<pnj.project.topcalc.TCTermButton
 							android:layout_width="match_parent" android:layout_height="wrap_content"
 							android:layout_weight="1" android:text="plus" />
 
@@ -508,7 +526,7 @@
 
 
 
-				<pnj.project.topcalc.TCButton
+				<pnj.project.topcalc.TCTermButton
 					android:id="@+id/zero" android:layout_width="match_parent"
 					android:layout_height="0dp" android:layout_weight="1" android:text="0" />
 
@@ -526,19 +544,19 @@
 					android:layout_weight="1" android:background="#966"
 					android:orientation="vertical">
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="div" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="x" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="min" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="plus" />
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="eq" />
 
@@ -549,23 +567,23 @@
 					android:layout_weight="1" android:background="#994"
 					android:orientation="vertical">
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="div" />
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="x" />
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="min" />
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="plus" />
 
-					<pnj.project.topcalc.TCButton
+					<pnj.project.topcalc.TCTermButton
 						android:layout_width="match_parent" android:layout_height="wrap_content"
 						android:layout_weight="1" android:text="eq" />
 
