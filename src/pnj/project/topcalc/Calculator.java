@@ -10,6 +10,7 @@ public class Calculator extends Activity {
 	static ACButton ac;
 	static DeleteButton delete;
 	static EqualsButton equals;
+	static TCAnswerButton answer;
 	static TCCurrentCalculation currentCalculation;
 	static TCCalculationHistory calculationHistory; 
 

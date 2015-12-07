@@ -16,6 +16,10 @@ public class TCCalculationHistory {
 		indexToDisplay++;
 	}
 	
+	public void resetIndex(){
+		indexToDisplay = history.size() - 1;
+	}
+	
 	public String answerToDisplay(){
 		if (history.size() == 0) return "";
 		return history.get(indexToDisplay).getCurrentCalculation().answer;

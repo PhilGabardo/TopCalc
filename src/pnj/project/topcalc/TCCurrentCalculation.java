@@ -43,6 +43,8 @@ public class TCCurrentCalculation extends TextView{
 	public void compute() {
 		getCurrentCalculation().calculate();
 		Calculator.calculationHistory.add(this);
+		Calculator.calculationHistory.resetIndex();
+		Calculator.answer.update();
 		reset();
 		updateDisplay();
 		

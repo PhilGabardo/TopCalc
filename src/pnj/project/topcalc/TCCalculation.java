@@ -8,6 +8,7 @@ public class TCCalculation {
 	
 	public TCCalculation(){
 		expression = new ArrayList<TCTermButton>();
+		answer = "";
 	}
 
 	public void calculate() {

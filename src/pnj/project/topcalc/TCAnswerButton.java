@@ -10,7 +10,7 @@ public class TCAnswerButton extends TCTermButton{
 	}
 	
 	public void update(){
-		this.setText(Calculator.calculationHistory.get(TCCal))
+		this.setText(Calculator.calculationHistory.answerToDisplay());
 	}
 
 }
