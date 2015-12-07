@@ -5,7 +5,7 @@ import android.widget.Button;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class EqualsButton extends Button implements OnClickListener{
+public class EqualsButton extends TCButton implements OnClickListener{
 
 	public EqualsButton(Context context) {
 		super(context);
@@ -13,7 +13,7 @@ public class EqualsButton extends Button implements OnClickListener{
 	}
 
 	@Override
-	public void onClick(View arg0) {
+	public void action() {
 		Calculator.currentCalculation.compute();
 		
 	}

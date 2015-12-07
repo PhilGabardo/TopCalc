@@ -5,7 +5,7 @@ import android.widget.Button;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class DeleteButton extends Button implements OnClickListener{
+public class DeleteButton extends TCButton implements OnClickListener{
 
 	public DeleteButton(Context context) {
 		super(context);
@@ -13,7 +13,7 @@ public class DeleteButton extends Button implements OnClickListener{
 	}
 
 	@Override
-	public void onClick(View v) {
+	public void action() {
 		Calculator.currentCalculation.deleteLast();
 	}
 

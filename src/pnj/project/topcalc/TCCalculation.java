@@ -3,11 +3,11 @@ package pnj.project.topcalc;
 import java.util.ArrayList;
 
 public class TCCalculation {
-	ArrayList<TCButton> expression;
+	ArrayList<TCTermButton> expression;
 	String answer;
 	
 	public TCCalculation(){
-		expression = new ArrayList<TCButton>();
+		expression = new ArrayList<TCTermButton>();
 	}
 
 	public void calculate() {

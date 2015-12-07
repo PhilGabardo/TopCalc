@@ -6,10 +6,10 @@ import android.view.Menu;
 
 public class Calculator extends Activity {
 	
-	TCButton[] tcbuttons;
-	ACButton ac;
-	DeleteButton delete;
-	EqualsButton equals;
+	static TCTermButton[] tcbuttons;
+	static ACButton ac;
+	static DeleteButton delete;
+	static EqualsButton equals;
 	static TCCurrentCalculation currentCalculation;
 	TCCalculationHistory calculationHistory; 
 

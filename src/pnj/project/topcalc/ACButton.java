@@ -1,11 +1,10 @@
 package pnj.project.topcalc;
 
 import android.content.Context;
-import android.widget.Button;
-import android.view.View;
 import android.view.View.OnClickListener;
 
-public class ACButton extends Button implements OnClickListener{
+public class ACButton extends TCButton implements OnClickListener{
+
 
 	public ACButton(Context context) {
 		super(context);
@@ -13,7 +12,7 @@ public class ACButton extends Button implements OnClickListener{
 	}
 
 	@Override
-	public void onClick(View v) {
+	public void action() {
 		Calculator.currentCalculation.reset();
 		// TODO Auto-generated method stub
 		

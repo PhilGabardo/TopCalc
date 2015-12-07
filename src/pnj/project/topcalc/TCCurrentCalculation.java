@@ -24,14 +24,14 @@ public class TCCurrentCalculation extends TextView{
 		}
 	}
 	
-	public TCButton getLast(){
+	public TCTermButton getLast(){
 		if (getCurrentCalculation().expression.size() > 0){
 			return getCurrentCalculation().expression.get(getCurrentCalculation().expression.size()-1);
 		}
 		return null;
 	}
 	
-	public void add(TCButton term){
+	public void add(TCTermButton term){
 		getCurrentCalculation().expression.add(term);
 		updateDisplay();
 	}
@@ -57,7 +57,7 @@ public class TCCurrentCalculation extends TextView{
 		this.currentCalculation = currentCalculation;
 	}
 
-	public Type getLastTyped() {
+	public pnj.project.topcalc.TCTermButton.Type getLastTyped() {
 		if(getCurrentCalculation().expression.size() < 0){
 			return null;
 		}
