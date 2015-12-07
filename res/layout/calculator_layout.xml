@@ -9,7 +9,7 @@
 		android:layout_weight="2" android:background="#0f0"
 		android:orientation="horizontal">
 
-		<pnj.project.topcalc.DeleteButton
+		<pnj.project.topcalc.TCTermButton
 			android:id="@+id/HelpButton" android:layout_width="0dp"
 			android:layout_height="wrap_content" android:layout_weight="1"
 			android:text="\?" />
@@ -19,15 +19,15 @@
 			android:layout_weight="1" android:background="#fff"
 			android:orientation="vertical">
 
-			<pnj.project.topcalc.DeleteButton
+			<pnj.project.topcalc.TCTermButton
 				android:id="@+id/UpButton" android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:text="u" />
 
-			<pnj.project.topcalc.DeleteButton
+			<pnj.project.topcalc.TCTermButton
 				android:id="@+id/MidButton" android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:text="m" />
 
-			<pnj.project.topcalc.DeleteButton
+			<pnj.project.topcalc.TCTermButton
 				android:id="@+id/DownButton" android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:text="d" />
 		</LinearLayout>
@@ -72,14 +72,14 @@
                                   android:orientation="horizontal"
                                   
                                    >
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
                                        android:id="@+id/xpowy"
                                        android:layout_width="0dp"
                                        android:layout_height="match_parent"
                                        android:layout_weight="1"
                                        android:text="u" />
 
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
@@ -95,14 +95,14 @@
                                   android:orientation="horizontal"
                                   
                                    >
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
                                        android:id="@+id/xpowy"
                                        android:layout_width="0dp"
                                        android:layout_height="match_parent"
                                        android:layout_weight="1"
                                        android:text="u" />
 
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
@@ -118,14 +118,14 @@
                                   android:orientation="horizontal"
                                   
                                    >
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
                                        android:id="@+id/xpowy"
                                        android:layout_width="0dp"
                                        android:layout_height="match_parent"
                                        android:layout_weight="1"
                                        android:text="u" />
 
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
@@ -141,14 +141,14 @@
                                   android:orientation="horizontal"
                                   
                                    >
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
                                        android:id="@+id/xpowy"
                                        android:layout_width="0dp"
                                        android:layout_height="match_parent"
                                        android:layout_weight="1"
                                        android:text="u" />
 
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
@@ -164,14 +164,14 @@
                                   android:orientation="horizontal"
                                   
                                    >
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
                                        android:id="@+id/xpowy"
                                        android:layout_width="0dp"
                                        android:layout_height="match_parent"
                                        android:layout_weight="1"
                                        android:text="u" />
 
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
@@ -192,7 +192,7 @@
             android:orientation="vertical" >
             
             
-            <pnj.project.topcalc.DeleteButton
+            <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -219,20 +219,20 @@
                                   
                                    > 
 
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
                                        android:id="@+id/xpowy"
                                        android:layout_width="0dp"
                                        android:layout_height="match_parent"
                                        android:layout_weight="1"
                                        android:text="u" />
 
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:text="u" />
-                                   <pnj.project.topcalc.DeleteButton
+                                   <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
@@ -251,19 +251,19 @@
                                   android:orientation="horizontal"
                                   
                                    >
-                                       <pnj.project.topcalc.DeleteButton
+                                       <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:text="u" />
-                                       <pnj.project.topcalc.DeleteButton
+                                       <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:text="u" />
-                                       <pnj.project.topcalc.DeleteButton
+                                       <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
@@ -279,19 +279,19 @@
                                   android:orientation="horizontal"
                                   
                                    >
-                                       <pnj.project.topcalc.DeleteButton
+                                       <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:text="u" />
-                                       <pnj.project.topcalc.DeleteButton
+                                       <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:text="u" />
-                                       <pnj.project.topcalc.DeleteButton
+                                       <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
@@ -308,19 +308,19 @@
                                   android:orientation="horizontal"
                                   
                                    >
-                                       <pnj.project.topcalc.DeleteButton
+                                       <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:text="u" />
-                                       <pnj.project.topcalc.DeleteButton
+                                       <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:text="u" />
-                                       <pnj.project.topcalc.DeleteButton
+                                       <pnj.project.topcalc.TCTermButton
             android:id="@+id/xpowy"
             android:layout_height="match_parent"
             android:layout_width="0dp"
