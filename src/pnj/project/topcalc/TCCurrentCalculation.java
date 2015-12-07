@@ -1,5 +1,6 @@
 package pnj.project.topcalc;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
@@ -7,10 +8,23 @@ import android.widget.TextView;
 public class TCCurrentCalculation extends TextView{
 	private TCCalculation currentCalculation;
 	
-	public TCCurrentCalculation(Context context, AttributeSet attrs, int defStyle) {
-		super(context, attrs, defStyle);
-		setCurrentCalculation(new TCCalculation());
+	public TCCurrentCalculation(Context context) {
+	    super(context);
 	}
+
+	public TCCurrentCalculation(Context context, AttributeSet attrs) {
+	    super(context, attrs);
+	}
+
+	public TCCurrentCalculation(Context context, AttributeSet attrs, int defStyleAttr) {
+	    super(context, attrs, defStyleAttr);
+	}
+
+	@TargetApi(21)
+	public TCCurrentCalculation(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+	    super(context, attrs, defStyleAttr);
+	}
+
 	
 	public void reset(){
 		setCurrentCalculation(new TCCalculation());

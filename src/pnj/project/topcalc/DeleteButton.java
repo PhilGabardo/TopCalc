@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class DeleteButton extends Button implements OnClickListener{
+public class DeleteButton extends TCButton implements OnClickListener{
 
 
 	public DeleteButton(Context context) {
@@ -28,10 +28,8 @@ public class DeleteButton extends Button implements OnClickListener{
 	}
 
 	@Override
-	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		
+	public void action() {
+		Calculator.currentCalculation.deleteLast();
 	}
-
 
 }
