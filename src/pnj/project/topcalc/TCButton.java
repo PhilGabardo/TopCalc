@@ -23,7 +23,7 @@ public class TCButton extends Button implements OnClickListener{
 	}
 	
 	public boolean isPressable(){
-		Type lastType = Calculator.currentCalculation.getCurrentCalculation().expression.get(Calculator.currentCalculation.expression.size()-1).type;
+		Type lastType = Calculator.currentCalculation.getLastTyped();
 		if (type == Type.NON_MINUS_OPERATOR){
 			if (lastType == Type.DECIMAL){
 				return false;

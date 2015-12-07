@@ -17,7 +17,7 @@ public class TCCalculation {
 	public String toString(){
 		String expressionString = "";
 		for (int i = 0; i < expression.size(); i++){
-			expressionString += expression.get(i).expression;
+			expressionString += expression.get(i).term;
 		}
 		return expressionString;
 	}
