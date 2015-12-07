@@ -11,7 +11,7 @@ public class Calculator extends Activity {
 	static DeleteButton delete;
 	static EqualsButton equals;
 	static TCCurrentCalculation currentCalculation;
-	TCCalculationHistory calculationHistory; 
+	static TCCalculationHistory calculationHistory; 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -8,6 +8,17 @@ public class TCCalculationHistory {
 	
 	public TCCalculationHistory(){
 		history = new ArrayList<TCCurrentCalculation>();
+		indexToDisplay = -1;
+	}
+	
+	public void add(TCCurrentCalculation calc){
+		history.add(calc);
+		indexToDisplay++;
+	}
+	
+	public String answerToDisplay(){
+		if (history.size() == 0) return "";
+		return history.get(indexToDisplay).getCurrentCalculation().answer;
 	}
 
 }

@@ -1,6 +1,5 @@
 package pnj.project.topcalc;
 
-import pnj.project.topcalc.TCButton.Type;
 import android.content.Context;
 import android.widget.TextView;
 
@@ -43,7 +42,7 @@ public class TCCurrentCalculation extends TextView{
 
 	public void compute() {
 		getCurrentCalculation().calculate();
-		TCCalculationHistory.history.add(this);
+		Calculator.calculationHistory.add(this);
 		reset();
 		updateDisplay();
 		
