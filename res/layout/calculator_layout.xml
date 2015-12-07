@@ -86,7 +86,7 @@
         
         <LinearLayout
             android:id="@+id/InputW2"
-            android:layout_width="wrap_content"
+                  android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="2"
             android:background="#0fc"
@@ -96,7 +96,7 @@
         
         <LinearLayout
             android:id="@+id/InputW3"
-            android:layout_width="wrap_content"
+                  android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="3"
             android:background="#0f8"
@@ -106,12 +106,113 @@
         
         <LinearLayout
             android:id="@+id/InputW4"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="4"
             android:background="#0ff"
-            android:orientation="vertical" >
+            android:measureWithLargestChild="false"
+            android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:id="@+id/ACDel"
+                   android:layout_width="0dp"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="2"
+                   android:background="#fff"
+                   android:orientation="vertical"
+                   android:weightSum="2" >
             
+        </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/PercDiv"
+                               android:layout_width="0dp"
+                               android:layout_height="fill_parent"
+                               android:layout_weight="2"
+                               android:background="#9ff"
+                               android:orientation="horizontal"
+                               android:weightSum="2" >
+                              
+                              <LinearLayout
+                                  android:id="@+id/Col8"
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="1"
+                                  android:background="#966"
+                                  android:orientation="vertical" >
+
+                                <pnj.project.topcalc.TCButton 
+                      android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_weight="1"
+            android:text="div" />
+                                  <pnj.project.topcalc.TCButton 
+                      android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_weight="1"
+            android:text="x" />
+                                       <pnj.project.topcalc.TCButton 
+                      android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_weight="1"
+            android:text="min" />
+                                            <pnj.project.topcalc.TCButton 
+                      android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_weight="1"
+            android:text="plus" />
+                                                 <pnj.project.topcalc.TCButton 
+                      android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_weight="1"
+            android:text="eq" />
+       
+                   </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/col9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#994"
+                        android:orientation="vertical" >
+
+                             <pnj.project.topcalc.TCButton
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_weight="1"
+                                 android:text="div" />
+
+                                  <pnj.project.topcalc.TCButton
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_weight="1"
+                                      android:text="x" />
+
+                                       <pnj.project.topcalc.TCButton
+                                           android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           android:layout_weight="1"
+                                           android:text="min" />
+
+                                            <pnj.project.topcalc.TCButton
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="plus" />
+
+                                                 <pnj.project.topcalc.TCButton
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_weight="1"
+                                                     android:text="eq" />
+            
+        </LinearLayout>
+        
+            
+        </LinearLayout>
+        
+                          
         </LinearLayout>
         
         
