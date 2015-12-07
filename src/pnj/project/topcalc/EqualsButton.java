@@ -14,8 +14,7 @@ public class EqualsButton extends Button implements OnClickListener{
 
 	@Override
 	public void onClick(View arg0) {
-		Calculator.currentCalculation.calculate();
-		Calculator.currentCalculation = new TCCalculation();
+		Calculator.currentCalculation.compute();
 		
 	}
 	

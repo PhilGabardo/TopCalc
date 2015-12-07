@@ -10,13 +10,14 @@ public class Calculator extends Activity {
 	ACButton ac;
 	DeleteButton delete;
 	EqualsButton equals;
-	static TCCalculation currentCalculation;
+	static TCCurrentCalculation currentCalculation;
 	TCCalculationHistory calculationHistory; 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_calculator);
+		currentCalculation = new TCCurrentCalculation(this);
 	}
 
 	@Override

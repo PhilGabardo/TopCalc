@@ -14,7 +14,7 @@ public class ACButton extends Button implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		Calculator.currentCalculation = new TCCalculation();
+		Calculator.currentCalculation.reset();
 		// TODO Auto-generated method stub
 		
 	}

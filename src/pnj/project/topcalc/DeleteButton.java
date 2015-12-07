@@ -14,7 +14,7 @@ public class DeleteButton extends Button implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		Calculator.currentCalculation.expression.remove(Calculator.currentCalculation.expression.size() - 1);
+		Calculator.currentCalculation.deleteLast();
 	}
 
 }
