@@ -24,6 +24,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+<<<<<<< Updated upstream
         public static final int DeleteButton=0x7f080008;
         public static final int DisplayBox=0x7f080007;
         public static final int MainCalc=0x7f08000b;
@@ -31,6 +32,23 @@ public final class R {
         public static final int PrevCalc=0x7f08000a;
         public static final int PrevnCurrentBox=0x7f080009;
         public static final int action_settings=0x7f08000c;
+=======
+        public static final int DisplayBox=0x7f080007;
+        public static final int DownButton=0x7f08000c;
+        public static final int HelpButton=0x7f080008;
+        public static final int History=0x7f080009;
+        public static final int InputInterface=0x7f080010;
+        public static final int InputW2=0x7f080011;
+        public static final int InputW3=0x7f080012;
+        public static final int InputW4=0x7f080013;
+        public static final int MainCalc=0x7f08000f;
+        public static final int MidButton=0x7f08000b;
+        public static final int OuterCalc=0x7f080006;
+        public static final int PrevCalc=0x7f08000e;
+        public static final int PrevnCurrentBox=0x7f08000d;
+        public static final int UpButton=0x7f08000a;
+        public static final int action_settings=0x7f080014;
+>>>>>>> Stashed changes
         public static final int linearLayout1=0x7f080000;
         public static final int tableRow1=0x7f080002;
         public static final int tableRow2=0x7f080003;
