@@ -17,8 +17,7 @@ public class Calculator extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_calculator);
-		currentCalculation = new TCCurrentCalculation(this);
+		setContentView(R.layout.calculator_layout);
 	}
 
 	@Override
