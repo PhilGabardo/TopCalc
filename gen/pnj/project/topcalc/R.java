@@ -17,6 +17,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int description=0x7f010000;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int direction=0x7f010003;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -56,96 +64,88 @@ containing a value of this type.
         public static final int nth=0x7f020001;
     }
     public static final class id {
-        public static final int AC=0x7f04003e;
-        public static final int ACDel=0x7f04003b;
-        public static final int AnswerButton=0x7f040028;
-        public static final int Col6=0x7f04003d;
-        public static final int Col8=0x7f040049;
+        public static final int AC=0x7f040037;
+        public static final int ACDel=0x7f040034;
+        public static final int AnswerButton=0x7f040021;
+        public static final int Col6=0x7f040036;
+        public static final int Col8=0x7f040042;
         public static final int DECIMAL=0x7f040001;
-        public static final int DisplayBox=0x7f04000d;
-        public static final int DownButton=0x7f040012;
-        public static final int HelpButton=0x7f04000e;
-        public static final int History=0x7f04000f;
+        public static final int DisplayBox=0x7f040007;
+        public static final int DownButton=0x7f04000b;
+        public static final int HelpButton=0x7f040008;
+        public static final int History=0x7f040009;
         public static final int INTEGER=0x7f040002;
-        public static final int InputInterface=0x7f040016;
-        public static final int InputW2=0x7f040017;
-        public static final int InputW3=0x7f040027;
-        public static final int InputW4=0x7f04003a;
-        public static final int LBracket=0x7f040019;
+        public static final int InputInterface=0x7f04000f;
+        public static final int InputW2=0x7f040010;
+        public static final int InputW3=0x7f040020;
+        public static final int InputW4=0x7f040033;
+        public static final int LBracket=0x7f040012;
         public static final int LEFT_BRACKET=0x7f040004;
         public static final int MINUS_OPERATOR=0x7f040003;
-        public static final int MainCalc=0x7f040015;
-        public static final int MidButton=0x7f040011;
+        public static final int MainCalc=0x7f04000e;
         public static final int NON_MINUS_OPERATOR=0x7f040000;
-        public static final int NoZero=0x7f04003c;
-        public static final int NonAnsBlock=0x7f040029;
-        public static final int OuterCalc=0x7f04000c;
-        public static final int PercDiv=0x7f040048;
-        public static final int PrevCalc=0x7f040014;
-        public static final int PrevnCurrentBox=0x7f040013;
-        public static final int R2B2=0x7f04002a;
-        public static final int R3B2=0x7f04002e;
-        public static final int R4B2=0x7f040032;
-        public static final int R5B2=0x7f040036;
-        public static final int RBracket=0x7f04001a;
+        public static final int NoZero=0x7f040035;
+        public static final int NonAnsBlock=0x7f040022;
+        public static final int OuterCalc=0x7f040006;
+        public static final int PercDiv=0x7f040041;
+        public static final int PrevCalc=0x7f04000d;
+        public static final int PrevnCurrentBox=0x7f04000c;
+        public static final int R2B2=0x7f040023;
+        public static final int R3B2=0x7f040027;
+        public static final int R4B2=0x7f04002b;
+        public static final int R5B2=0x7f04002f;
+        public static final int RBracket=0x7f040013;
         public static final int RIGHT_BRACKET=0x7f040005;
-        public static final int Row1=0x7f040018;
-        public static final int Row2=0x7f04001b;
-        public static final int Row3=0x7f04001e;
-        public static final int Row4=0x7f040021;
-        public static final int Row5=0x7f040024;
-        public static final int UpButton=0x7f040010;
-        public static final int action_settings=0x7f040055;
-        public static final int col7=0x7f040042;
-        public static final int col9=0x7f04004f;
-        public static final int cos=0x7f040033;
-        public static final int cosinv=0x7f040037;
-        public static final int decimal=0x7f04004e;
-        public static final int delete=0x7f040043;
-        public static final int divide=0x7f040050;
-        public static final int eight=0x7f040044;
-        public static final int epowx=0x7f04002c;
-        public static final int equals=0x7f040054;
-        public static final int factorial=0x7f040022;
-        public static final int five=0x7f040045;
-        public static final int four=0x7f040040;
-        public static final int linearLayout1=0x7f040006;
-        public static final int ln=0x7f040030;
-        public static final int log=0x7f040031;
-        public static final int minus=0x7f040052;
-        public static final int mod=0x7f040035;
-        public static final int multiply=0x7f040051;
-        public static final int nine=0x7f04004b;
-        public static final int one=0x7f040041;
-        public static final int percent=0x7f04004a;
-        public static final int pi=0x7f040039;
-        public static final int plus=0x7f040053;
-        public static final int radians=0x7f040025;
-        public static final int seven=0x7f04003f;
-        public static final int sin=0x7f040023;
-        public static final int sinInv=0x7f040026;
-        public static final int six=0x7f04004c;
-        public static final int sqrt=0x7f04001f;
-        public static final int tableRow1=0x7f040008;
-        public static final int tableRow2=0x7f040009;
-        public static final int tableRow3=0x7f04000a;
-        public static final int tableRow4=0x7f04000b;
-        public static final int tableRow5=0x7f040007;
-        public static final int tan=0x7f040034;
-        public static final int taninv=0x7f040038;
-        public static final int tenpown=0x7f04002d;
-        public static final int thirdrt=0x7f040020;
-        public static final int three=0x7f04004d;
-        public static final int two=0x7f040046;
-        public static final int xpow2=0x7f04001c;
-        public static final int xpow3=0x7f04001d;
-        public static final int xpown=0x7f04002b;
-        public static final int xrty=0x7f04002f;
-        public static final int zero=0x7f040047;
+        public static final int Row1=0x7f040011;
+        public static final int Row2=0x7f040014;
+        public static final int Row3=0x7f040017;
+        public static final int Row4=0x7f04001a;
+        public static final int Row5=0x7f04001d;
+        public static final int UpButton=0x7f04000a;
+        public static final int action_settings=0x7f04004e;
+        public static final int col7=0x7f04003b;
+        public static final int col9=0x7f040048;
+        public static final int cos=0x7f04002c;
+        public static final int cosinv=0x7f040030;
+        public static final int decimal=0x7f040047;
+        public static final int delete=0x7f04003c;
+        public static final int divide=0x7f040049;
+        public static final int eight=0x7f04003d;
+        public static final int epowx=0x7f040025;
+        public static final int equals=0x7f04004d;
+        public static final int factorial=0x7f04001b;
+        public static final int five=0x7f04003e;
+        public static final int four=0x7f040039;
+        public static final int ln=0x7f040029;
+        public static final int log=0x7f04002a;
+        public static final int minus=0x7f04004b;
+        public static final int mod=0x7f04002e;
+        public static final int multiply=0x7f04004a;
+        public static final int nine=0x7f040044;
+        public static final int one=0x7f04003a;
+        public static final int percent=0x7f040043;
+        public static final int pi=0x7f040032;
+        public static final int plus=0x7f04004c;
+        public static final int radians=0x7f04001e;
+        public static final int seven=0x7f040038;
+        public static final int sin=0x7f04001c;
+        public static final int sinInv=0x7f04001f;
+        public static final int six=0x7f040045;
+        public static final int sqrt=0x7f040018;
+        public static final int tan=0x7f04002d;
+        public static final int taninv=0x7f040031;
+        public static final int tenpown=0x7f040026;
+        public static final int thirdrt=0x7f040019;
+        public static final int three=0x7f040046;
+        public static final int two=0x7f04003f;
+        public static final int xpow2=0x7f040015;
+        public static final int xpow3=0x7f040016;
+        public static final int xpown=0x7f040024;
+        public static final int xrty=0x7f040028;
+        public static final int zero=0x7f040040;
     }
     public static final class layout {
-        public static final int activity_calculator=0x7f030000;
-        public static final int calculator_layout=0x7f030001;
+        public static final int calculator_layout=0x7f030000;
     }
     public static final class menu {
         public static final int calculator=0x7f080000;
@@ -184,6 +184,33 @@ containing a value of this type.
         public static final int AppTheme=0x7f070001;
     }
     public static final class styleable {
+        /** Attributes that can be used with a HistoryControlButton.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #HistoryControlButton_direction pnj.project.topcalc:direction}</code></td><td></td></tr>
+           </table>
+           @see #HistoryControlButton_direction
+         */
+        public static final int[] HistoryControlButton = {
+            0x7f010003
+        };
+        /**
+          <p>This symbol is the offset where the {@link pnj.project.topcalc.R.attr#direction}
+          attribute's value can be found in the {@link #HistoryControlButton} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name pnj.project.topcalc:direction
+        */
+        public static final int HistoryControlButton_direction = 0;
         /** Attributes that can be used with a TCTermButton.
            <p>Includes the following attributes:</p>
            <table>

@@ -59,7 +59,7 @@ public class TCCalculationHistory extends TextView{
 			this.setText(history.get(indexToDisplay).toScreen());
 		}
 		else{
-			this.setText("");
+			this.setText("RESET");
 		}
 	}
 	

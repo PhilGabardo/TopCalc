@@ -20,15 +20,14 @@
 			android:layout_weight="1" android:background="#000"
 			android:orientation="vertical">
 
-			<pnj.project.topcalc.DeleteButton
+			<pnj.project.topcalc.HistoryControlButton
+			    myapp:direction="0"
 				android:id="@+id/UpButton" android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:text="u" />
 
-			<pnj.project.topcalc.DeleteButton
-				android:id="@+id/MidButton" android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="m" />
 
-			<pnj.project.topcalc.DeleteButton
+			<pnj.project.topcalc.HistoryControlButton
+			    myapp:direction="1"
 				android:id="@+id/DownButton" android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:text="d" />
 		</LinearLayout>
