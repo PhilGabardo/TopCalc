@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools" android:id="@+id/OuterCalc"
 	android:layout_width="match_parent" android:layout_height="match_parent"
 	android:orientation="vertical" android:background="#f00">
@@ -70,7 +71,7 @@
 				<pnj.project.topcalc.TCTermButton
 					android:id="@+id/LBracket" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
-					description = "test"
+					myapp:description = "BRACKETtest"
 					android:text="(" />
 
 				<pnj.project.topcalc.TCTermButton
@@ -352,11 +353,10 @@
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="-" />
 
-					<pnj.project.topcalc.TCTermButton
+					<pnj.project.topcalc.TCTermButton description="ADDTEST"
 						android:id="@+id/plus" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
-						android:text="+"
-						description="ADDTEST" />
+						android:text="+" />
 
 					<pnj.project.topcalc.EqualsButton
 						android:id="@+id/equals" android:layout_width="match_parent"

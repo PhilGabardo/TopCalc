@@ -2,6 +2,7 @@ package pnj.project.topcalc;
 
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -16,69 +17,26 @@ public class TCTermButton extends TCButton{
 	String term;
 	Type type;
 	
-	Handler handel = new Handler();
-	
-	Runnable run = new Runnable() {
-
-	    @Override
-	    public void run() {
-	        Toast.makeText(getContext(), "TEST2", Toast.LENGTH_LONG).show();
-
-	    }
-	};
-	
 	
 	public TCTermButton(Context context) {
 	    super(context);
 	    
-
-	        setOnLongClickListener(new View.OnLongClickListener(){
-	        @Override
-	         public boolean onLongClick(View v) {
-	        	Toast.makeText(getContext(), description, Toast.LENGTH_LONG).show();;
-	        	return true;
-	        }
-	        });
 	}
 
 	public TCTermButton(Context context, final AttributeSet attrs) {
 	    super(context, attrs);
-
-	    setOnLongClickListener(new View.OnLongClickListener(){
-	        @Override
-	         public boolean onLongClick(View v) {
-	        	String bar = attrs.getAttributeValue(null, "description");
-	        	Toast.makeText(getContext(), bar, Toast.LENGTH_LONG).show();;
-	        	return true;
-	        }
-	        });
+	    init(attrs, context);
 	}
 
 	public TCTermButton(Context context, final AttributeSet attrs, int defStyleAttr) {
 	    super(context, attrs, defStyleAttr);
-
-	    setOnLongClickListener(new View.OnLongClickListener(){
-	        @Override
-	         public boolean onLongClick(View v) {
-	        	String bar = attrs.getAttributeValue(null, "description");
-	        	Toast.makeText(getContext(), bar, Toast.LENGTH_LONG).show();;
-	        	return true;
-	        }
-	        });
+	    init(attrs, context);
 	}
 
 	@TargetApi(21)
 	public TCTermButton(Context context, final AttributeSet attrs, int defStyleAttr, int defStyleRes) {
 	    super(context, attrs, defStyleAttr);
-
-	        setOnLongClickListener(new View.OnLongClickListener(){
-	        @Override
-	         public boolean onLongClick(View v) {
-	        	String bar = attrs.getAttributeValue(null, "description");
-	        	Toast.makeText(getContext(), bar, Toast.LENGTH_LONG).show();;
-	        	return true;
-	        }
-	        });
+	    init(attrs, context);
 	}
 
 	public enum Type{
@@ -117,6 +75,18 @@ public class TCTermButton extends TCButton{
 		return true;
 	}
 	
+	
+	private void init(AttributeSet attrs, Context context){
+	    TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.TCTermButton);
+	    final String des = a.getString(R.styleable.TCTermButton_description);
+	    setOnLongClickListener(new View.OnLongClickListener(){
+	        @Override
+	         public boolean onLongClick(View v) {
+	        	Toast.makeText(getContext(), des, Toast.LENGTH_LONG).show();;
+	        	return true;
+	        }
+	        });
+	}
 	
 
 	@Override
