@@ -128,4 +128,3 @@ public class TCTermButton extends TCButton{
 	}
 
 }
->>>>>>> Stashed changes

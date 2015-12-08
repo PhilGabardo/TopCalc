@@ -292,11 +292,16 @@
 						android:layout_width="0dp" android:layout_height="match_parent"
 						android:layout_weight="1" android:background="#d4d9d6"
 						android:orientation="vertical">
+							<LinearLayout android:id="@+id/allac"
+				android:layout_height="wrap_content" android:layout_weight="1"
+					android:layout_width="match_parent" 
+					android:orientation="horizontal" android:background="#ff4848">
 
 						<pnj.project.topcalc.ACButton
 							android:id="@+id/AC" android:layout_width="match_parent"
 							android:layout_height="wrap_content" android:layout_weight="1"
-							android:text="AC" />
+							android:text="AC"  />
+						</LinearLayout>
 						<pnj.project.topcalc.TCTermButton
 						    myapp:term = "7"
 						    myapp:type = "NON_MINUS_OPERATOR"
@@ -318,15 +323,22 @@
 
 
 					</LinearLayout>
+					
 					<LinearLayout android:id="@+id/col7"
 						android:layout_width="0dp" android:layout_height="match_parent"
 						android:layout_weight="1" android:background="#d4d9d6"
 						android:orientation="vertical">
+						
+						<LinearLayout android:id="@+id/deleteit"
+				android:layout_height="wrap_content" android:layout_weight="1"
+					android:layout_width="match_parent" 
+					android:orientation="horizontal" android:background="#f78b8b">
 
 						<pnj.project.topcalc.DeleteButton
 							android:id="@+id/delete" android:layout_width="match_parent"
 							android:layout_height="wrap_content" android:layout_weight="1"
 							android:text="Del" />
+						</LinearLayout>
 						<pnj.project.topcalc.TCTermButton
 						    myapp:term = "8"
 						    myapp:type = "NON_MINUS_OPERATOR"
