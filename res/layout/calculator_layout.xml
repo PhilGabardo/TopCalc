@@ -355,9 +355,10 @@
 					<pnj.project.topcalc.TCTermButton
 						android:id="@+id/plus" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
-						android:text="+" />
+						android:text="+"
+						description="ADDTEST" />
 
-					<pnj.project.topcalc.TCTermButton
+					<pnj.project.topcalc.EqualsButton
 						android:id="@+id/equals" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="="/>

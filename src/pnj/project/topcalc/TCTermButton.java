@@ -16,22 +16,69 @@ public class TCTermButton extends TCButton{
 	String term;
 	Type type;
 	
+	Handler handel = new Handler();
+	
+	Runnable run = new Runnable() {
+
+	    @Override
+	    public void run() {
+	        Toast.makeText(getContext(), "TEST2", Toast.LENGTH_LONG).show();
+
+	    }
+	};
+	
 	
 	public TCTermButton(Context context) {
 	    super(context);
+	    
+
+	        setOnLongClickListener(new View.OnLongClickListener(){
+	        @Override
+	         public boolean onLongClick(View v) {
+	        	Toast.makeText(getContext(), description, Toast.LENGTH_LONG).show();;
+	        	return true;
+	        }
+	        });
 	}
 
-	public TCTermButton(Context context, AttributeSet attrs) {
+	public TCTermButton(Context context, final AttributeSet attrs) {
 	    super(context, attrs);
+
+	    setOnLongClickListener(new View.OnLongClickListener(){
+	        @Override
+	         public boolean onLongClick(View v) {
+	        	String bar = attrs.getAttributeValue(null, "description");
+	        	Toast.makeText(getContext(), bar, Toast.LENGTH_LONG).show();;
+	        	return true;
+	        }
+	        });
 	}
 
-	public TCTermButton(Context context, AttributeSet attrs, int defStyleAttr) {
+	public TCTermButton(Context context, final AttributeSet attrs, int defStyleAttr) {
 	    super(context, attrs, defStyleAttr);
+
+	    setOnLongClickListener(new View.OnLongClickListener(){
+	        @Override
+	         public boolean onLongClick(View v) {
+	        	String bar = attrs.getAttributeValue(null, "description");
+	        	Toast.makeText(getContext(), bar, Toast.LENGTH_LONG).show();;
+	        	return true;
+	        }
+	        });
 	}
 
 	@TargetApi(21)
-	public TCTermButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+	public TCTermButton(Context context, final AttributeSet attrs, int defStyleAttr, int defStyleRes) {
 	    super(context, attrs, defStyleAttr);
+
+	        setOnLongClickListener(new View.OnLongClickListener(){
+	        @Override
+	         public boolean onLongClick(View v) {
+	        	String bar = attrs.getAttributeValue(null, "description");
+	        	Toast.makeText(getContext(), bar, Toast.LENGTH_LONG).show();;
+	        	return true;
+	        }
+	        });
 	}
 
 	public enum Type{
@@ -70,44 +117,10 @@ public class TCTermButton extends TCButton{
 		return true;
 	}
 	
-	Handler handel = new Handler();
 	
-	Runnable run = new Runnable() {
-
-	    @Override
-	    public void run() {
-	        Toast.makeText(getContext(), description, Toast.LENGTH_LONG).show();
-
-	    }
-	};
-	
-	@Override
-    public void setOnTouchListener(final OnTouchListener l) {
-	 super.setOnTouchListener(new OnTouchListener() {
-		 
-
-		@Override
-		public boolean onTouch(View arg0, MotionEvent arg1) {
-			switch (arg1.getAction()) {
-	         case MotionEvent.ACTION_DOWN:
-	             handel.postDelayed(run, 5000/* OR the amount of time you want */);
-	             break;
-
-	         default:
-	             handel.removeCallbacks(run);
-	             break;
-
-	         }
-	         return true;
-		}
-
-	    });
-	 
-	 
-	}
 
 	@Override
 	public void action() {
-		Calculator.currentCalculation.add(this);
+		//Calculator.currentCalculation.add(this);
 	}
 }
