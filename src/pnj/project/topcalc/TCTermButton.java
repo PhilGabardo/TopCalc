@@ -1,13 +1,16 @@
 package pnj.project.topcalc;
 
 import android.annotation.TargetApi;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.res.TypedArray;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class TCTermButton extends TCButton{
@@ -97,7 +100,7 @@ public class TCTermButton extends TCButton{
 	    setOnLongClickListener(new View.OnLongClickListener(){
 	        @Override
 	         public boolean onLongClick(View v) {
-	        	Toast.makeText(getContext(), des + type, Toast.LENGTH_LONG).show();;
+	        	openDescription(v,"Calculator Button "+TCTermButton.this.getText().toString(),des);
 	        	return true;
 	        }
 	        });
@@ -108,4 +111,21 @@ public class TCTermButton extends TCButton{
 	public void action() {
 		Calculator.currentCalculation.add(this);
 	}
+
+
+	
+	private void openDescription(View view, String title,String message) {
+		 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
+		 alertDialogBuilder.setTitle(title);
+		 alertDialogBuilder.setMessage(message);
+		 // set positive button: Yes message
+		 alertDialogBuilder.setPositiveButton("Okay, I've got it!",new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog,int id) {
+				}
+			  });
+		 AlertDialog alertDialog = alertDialogBuilder.create();
+		 alertDialog.show();
+	}
+
 }
+>>>>>>> Stashed changes
