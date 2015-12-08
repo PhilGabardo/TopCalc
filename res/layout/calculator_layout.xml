@@ -6,7 +6,7 @@
 
 	<LinearLayout android:id="@+id/DisplayBox"
 		android:layout_width="match_parent" android:layout_height="0dp"
-		android:layout_weight="2" android:background="#0f0"
+		android:layout_weight="2" android:background="#000"
 		android:orientation="horizontal">
 
 		<pnj.project.topcalc.DeleteButton
@@ -16,7 +16,7 @@
 
 		<LinearLayout android:id="@+id/History"
 			android:layout_width="0dp" android:layout_height="match_parent"
-			android:layout_weight="1" android:background="#fff"
+			android:layout_weight="1" android:background="#000"
 			android:orientation="vertical">
 
 			<pnj.project.topcalc.DeleteButton
@@ -34,7 +34,7 @@
 
 		<LinearLayout android:id="@+id/PrevnCurrentBox"
 			android:layout_width="0dp" android:layout_height="match_parent"
-			android:layout_weight="7" android:background="#00f"
+			android:layout_weight="7" android:background="#e9e5cb"
 			android:orientation="vertical">
 
 			<TextView android:id="@+id/PrevCalc" android:layout_width="match_parent"
@@ -63,154 +63,160 @@
 			android:layout_width="0dp" android:layout_height="fill_parent"
 			android:layout_weight="2" android:background="#0fc"
 			android:orientation="vertical">
-			<LinearLayout android:id="@+id/Col8"
+			<LinearLayout android:id="@+id/Row1"
 				android:layout_width="match_parent" android:layout_height="0dp"
-				android:layout_weight="1" android:background="#966"
+				android:layout_weight="1" android:background="#c7cdc8"
 				android:orientation="horizontal">
-				<pnj.project.topcalc.DeleteButton
-					android:id="@+id/xpowy" android:layout_width="0dp"
+				<pnj.project.topcalc.TCTermButton
+					android:id="@+id/LBracket" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
-					android:text="u" />
+					android:text="(" />
 
-				<pnj.project.topcalc.DeleteButton
-					android:id="@+id/xpowy" android:layout_height="match_parent"
-					android:layout_width="0dp" android:layout_weight="1" android:text="u" />
+				<pnj.project.topcalc.TCTermButton
+					android:id="@+id/RBracket" android:layout_width="0dp"
+					android:layout_height="match_parent" android:layout_weight="1"
+					android:text=")" />
 			</LinearLayout>
-			<LinearLayout android:id="@+id/Col8"
+			<LinearLayout android:id="@+id/Row2"
 				android:layout_width="match_parent" android:layout_height="0dp"
-				android:layout_weight="1" android:background="#966"
+				android:layout_weight="1" android:background="#c7cdc8"
 				android:orientation="horizontal">
-				<pnj.project.topcalc.DeleteButton
-					android:id="@+id/xpowy" android:layout_width="0dp"
+				<pnj.project.topcalc.TCButton
+					android:id="@+id/xpow2" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
-					android:text="u" />
+					android:text="x²" />
 
-				<pnj.project.topcalc.DeleteButton
-					android:id="@+id/xpowy" android:layout_height="match_parent"
-					android:layout_width="0dp" android:layout_weight="1" android:text="u" />
+				<pnj.project.topcalc.TCButton
+					android:id="@+id/xpow3" android:layout_height="match_parent"
+					android:layout_width="0dp" android:layout_weight="1" android:text="x³" />
 			</LinearLayout>
-			<LinearLayout android:id="@+id/Col8"
+			<LinearLayout android:id="@+id/Row3"
 				android:layout_width="match_parent" android:layout_height="0dp"
-				android:layout_weight="1" android:background="#966"
+				android:layout_weight="1" android:background="#c7cdc8"
 				android:orientation="horizontal">
-				<pnj.project.topcalc.DeleteButton
-					android:id="@+id/xpowy" android:layout_width="0dp"
+				<pnj.project.topcalc.TCButton
+					android:id="@+id/sqrt" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
-					android:text="u" />
+					android:text="√x" />
 
-				<pnj.project.topcalc.DeleteButton
-					android:id="@+id/xpowy" android:layout_height="match_parent"
-					android:layout_width="0dp" android:layout_weight="1" android:text="u" />
+				<pnj.project.topcalc.TCButton
+					android:id="@+id/thirdrt" android:layout_height="match_parent"
+					android:layout_width="0dp" android:layout_weight="1" android:text="³√x" />
 			</LinearLayout>
-			<LinearLayout android:id="@+id/Col8"
+			<LinearLayout android:id="@+id/Row4"
 				android:layout_width="match_parent" android:layout_height="0dp"
-				android:layout_weight="1" android:background="#966"
+				android:layout_weight="1" android:background="#c7cdc8"
 				android:orientation="horizontal">
-				<pnj.project.topcalc.DeleteButton
-					android:id="@+id/xpowy" android:layout_width="0dp"
+				<pnj.project.topcalc.TCButton
+					android:id="@+id/factorial" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
-					android:text="u" />
+					android:text="x!" />
 
-				<pnj.project.topcalc.DeleteButton
-					android:id="@+id/xpowy" android:layout_height="match_parent"
-					android:layout_width="0dp" android:layout_weight="1" android:text="u" />
+				<pnj.project.topcalc.TCButton
+					android:id="@+id/sin" android:layout_height="match_parent"
+					android:layout_width="0dp" android:layout_weight="1" android:text="sin" />
 			</LinearLayout>
-			<LinearLayout android:id="@+id/Col8"
+			<LinearLayout android:id="@+id/Row5"
 				android:layout_width="match_parent" android:layout_height="0dp"
-				android:layout_weight="1" android:background="#966"
+				android:layout_weight="1" android:background="#c7cdc8"
 				android:orientation="horizontal">
-				<pnj.project.topcalc.DeleteButton
-					android:id="@+id/xpowy" android:layout_width="0dp"
+				<pnj.project.topcalc.TCButton
+					android:id="@+id/radians" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
-					android:text="u" />
+					android:text="Rad" />
 
-				<pnj.project.topcalc.DeleteButton
-					android:id="@+id/xpowy" android:layout_height="match_parent"
-					android:layout_width="0dp" android:layout_weight="1" android:text="u" />
+				<pnj.project.topcalc.TCButton
+					android:id="@+id/sinInv" android:layout_height="match_parent"
+					android:layout_width="0dp" android:layout_weight="1" android:text="sin¹"
+					android:textAllCaps="false" />
 			</LinearLayout>
-
 		</LinearLayout>
 
 
 
 		<LinearLayout android:id="@+id/InputW3"
 			android:layout_width="0dp" android:layout_height="fill_parent"
-			android:layout_weight="3" android:background="#0f8"
+			android:layout_weight="3" android:background="#008000"
 			android:orientation="vertical">
 
-
 			<pnj.project.topcalc.TCAnswerButton
-				android:id="@+id/AnswerButton" android:layout_width="match_parent"
-				android:layout_height="0dp" android:layout_weight="1" android:text="Answer" />
+			    android:id="@+id/AnswerButton"
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="1"
+			    android:minHeight="0dp"
+			    android:minWidth="0dp"
+			    
+			    android:text="Answer" />
 
-			<LinearLayout android:id="@+id/Col8"
+			<LinearLayout android:id="@+id/NonAnsBlock"
 				android:layout_width="match_parent" android:layout_height="0dp"
-				android:layout_weight="4" android:background="#966"
+				android:layout_weight="4" android:background="#c7cdc8"
 				android:orientation="vertical">
 
-				<LinearLayout android:id="@+id/Col8"
+				<LinearLayout android:id="@+id/R2B2"
 					android:layout_width="match_parent" android:layout_height="0dp"
-					android:layout_weight="1" android:background="#966"
+					android:layout_weight="1" android:background="#c7cdc8"
 					android:orientation="horizontal">
 
-					<pnj.project.topcalc.DeleteButton
-						android:id="@+id/xpowy" android:layout_width="0dp"
+					<pnj.project.topcalc.TCButton
+						android:id="@+id/xpown" android:layout_width="0dp"
 						android:layout_height="match_parent" android:layout_weight="1"
 						android:text="xⁿ" />
 
-					<pnj.project.topcalc.DeleteButton
+					<pnj.project.topcalc.TCButton
 						android:id="@+id/epowx" android:layout_height="match_parent"
-						android:layout_width="0dp" android:layout_weight="1" android:text="ex" />
+						android:layout_width="0dp" android:layout_weight="1" android:text="eⁿ" />
 
 					<pnj.project.topcalc.DeleteButton
-						android:id="@+id/xpowy" android:layout_height="match_parent"
-						android:layout_width="0dp" android:layout_weight="1" android:text="u" />
+						android:id="@+id/tenpown" android:layout_height="match_parent"
+						android:layout_width="0dp" android:layout_weight="1" android:text="10ⁿ" />
 
 
 				</LinearLayout>
 
-				<LinearLayout android:id="@+id/Col8"
+				<LinearLayout android:id="@+id/R3B2"
 					android:layout_width="match_parent" android:layout_height="0dp"
-					android:layout_weight="1" android:background="#966"
+					android:layout_weight="1" android:background="#c7cdc8"
 					android:orientation="horizontal">
-					<pnj.project.topcalc.DeleteButton
-						android:id="@+id/xpowy" android:layout_height="match_parent"
-						android:layout_width="0dp" android:layout_weight="1" android:text="" />
-					<pnj.project.topcalc.DeleteButton
-						android:id="@+id/xpowy" android:layout_height="match_parent"
+					<pnj.project.topcalc.TCButton
+						android:id="@+id/xrty" android:layout_height="match_parent"
+						android:layout_width="0dp" android:layout_weight="1" android:text="yrtx" />
+					<pnj.project.topcalc.TCButton
+						android:id="@+id/ln" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="ln" />
-					<pnj.project.topcalc.DeleteButton
-						android:id="@+id/xpowy" android:layout_height="match_parent"
-						android:layout_width="0dp" android:layout_weight="1" android:text="u" />
+					<pnj.project.topcalc.TCButton
+						android:id="@+id/log" android:layout_height="match_parent"
+						android:layout_width="0dp" android:layout_weight="1" android:text="log10" />
 				</LinearLayout>
-				<LinearLayout android:id="@+id/Col8"
+				<LinearLayout android:id="@+id/R4B2"
 					android:layout_width="match_parent" android:layout_height="0dp"
-					android:layout_weight="1" android:background="#966"
+					android:layout_weight="1" android:background="#c7cdc8"
 					android:orientation="horizontal">
 					<pnj.project.topcalc.DeleteButton
-						android:id="@+id/xpowy" android:layout_height="match_parent"
-						android:layout_width="0dp" android:layout_weight="1" android:text="u" />
+						android:id="@+id/cos" android:layout_height="match_parent"
+						android:layout_width="0dp" android:layout_weight="1" android:text="cos" />
 					<pnj.project.topcalc.DeleteButton
-						android:id="@+id/xpowy" android:layout_height="match_parent"
-						android:layout_width="0dp" android:layout_weight="1" android:text="u" />
+						android:id="@+id/tan" android:layout_height="match_parent"
+						android:layout_width="0dp" android:layout_weight="1" android:text="tan" />
 					<pnj.project.topcalc.DeleteButton
-						android:id="@+id/xpowy" android:layout_height="match_parent"
-						android:layout_width="0dp" android:layout_weight="1" android:text="u" />
+						android:id="@+id/mod" android:layout_height="match_parent"
+						android:layout_width="0dp" android:layout_weight="1" android:text="Mod" />
 				</LinearLayout>
 
-				<LinearLayout android:id="@+id/Col8"
+				<LinearLayout android:id="@+id/R5B2"
 					android:layout_width="match_parent" android:layout_height="0dp"
-					android:layout_weight="1" android:background="#966"
+					android:layout_weight="1" android:background="#c7cdc8"
 					android:orientation="horizontal">
-					<pnj.project.topcalc.DeleteButton
-						android:id="@+id/xpowy" android:layout_height="match_parent"
-						android:layout_width="0dp" android:layout_weight="1" android:text="u" />
-					<pnj.project.topcalc.DeleteButton
-						android:id="@+id/xpowy" android:layout_height="match_parent"
-						android:layout_width="0dp" android:layout_weight="1" android:text="u" />
-					<pnj.project.topcalc.DeleteButton
-						android:id="@+id/xpowy" android:layout_height="match_parent"
-						android:layout_width="0dp" android:layout_weight="1" android:text="u" />
+					<pnj.project.topcalc.TCButton
+						android:id="@+id/cosinv" android:layout_height="match_parent"
+						android:layout_width="0dp" android:layout_weight="1" android:text="cos¹" />
+					<pnj.project.topcalc.TCButton
+						android:id="@+id/taninv" android:layout_height="match_parent"
+						android:layout_width="0dp" android:layout_weight="1" android:text="tan¹" />
+					<pnj.project.topcalc.TCButton
+						android:id="@+id/pi" android:layout_height="match_parent"
+						android:layout_width="0dp" android:layout_weight="1" android:text="π" />
 				</LinearLayout>
 
 			</LinearLayout>
@@ -225,8 +231,7 @@
 			<LinearLayout android:id="@+id/ACDel"
 				android:layout_width="0dp" android:layout_height="fill_parent"
 				android:layout_weight="2" android:background="#fff"
-				android:orientation="vertical">
-
+				android:orientation="vertical" android:padding="0dp">
 
 				<LinearLayout android:id="@+id/NoZero"
 					android:layout_width="match_parent" android:layout_height="0dp"
@@ -234,53 +239,57 @@
 					android:orientation="horizontal">
 					<LinearLayout android:id="@+id/Col6"
 						android:layout_width="0dp" android:layout_height="match_parent"
-						android:layout_weight="1" android:background="#966"
+						android:layout_weight="1" android:background="#d4d9d6"
 						android:orientation="vertical">
 
+						<pnj.project.topcalc.ACButton
+							android:id="@+id/AC" android:layout_width="match_parent"
+							android:layout_height="wrap_content" android:layout_weight="1"
+							android:text="AC" />
 						<pnj.project.topcalc.TCButton
-							android:layout_width="match_parent" android:layout_height="wrap_content"
-							android:layout_weight="1" android:text="div" />
+							android:id="@+id/seven" android:layout_width="match_parent"
+							android:layout_height="wrap_content" android:layout_weight="1"
+							android:text="7" />
 						<pnj.project.topcalc.TCButton
-							android:layout_width="match_parent" android:layout_height="wrap_content"
-							android:layout_weight="1" android:text="x" />
+							android:id="@+id/four" android:layout_width="match_parent"
+							android:layout_height="wrap_content" android:layout_weight="1"
+							android:text="4" />
 						<pnj.project.topcalc.TCButton
-							android:layout_width="match_parent" android:layout_height="wrap_content"
-							android:layout_weight="1" android:text="min" />
-						<pnj.project.topcalc.TCButton
-							android:layout_width="match_parent" android:layout_height="wrap_content"
-							android:layout_weight="1" android:text="plus" />
+							android:id="@+id/one" android:layout_width="match_parent"
+							android:layout_height="wrap_content" android:layout_weight="1"
+							android:text="1" />
 
 
 					</LinearLayout>
-					<LinearLayout android:id="@+id/Col7"
+					<LinearLayout android:id="@+id/col7"
 						android:layout_width="0dp" android:layout_height="match_parent"
-						android:layout_weight="1" android:background="#966"
+						android:layout_weight="1" android:background="#d4d9d6"
 						android:orientation="vertical">
 
+						<pnj.project.topcalc.DeleteButton
+							android:id="@+id/delete" android:layout_width="match_parent"
+							android:layout_height="wrap_content" android:layout_weight="1"
+							android:text="Del" />
 						<pnj.project.topcalc.TCButton
-							android:layout_width="match_parent" android:layout_height="wrap_content"
-							android:layout_weight="1" android:text="div" />
+							android:id="@+id/eight" android:layout_width="match_parent"
+							android:layout_height="wrap_content" android:layout_weight="1"
+							android:text="8" />
 						<pnj.project.topcalc.TCButton
-							android:layout_width="match_parent" android:layout_height="wrap_content"
-							android:layout_weight="1" android:text="x" />
+							android:id="@+id/five" android:layout_width="match_parent"
+							android:layout_height="wrap_content" android:layout_weight="1"
+							android:text="5" />
 						<pnj.project.topcalc.TCButton
-							android:layout_width="match_parent" android:layout_height="wrap_content"
-							android:layout_weight="1" android:text="min" />
-						<pnj.project.topcalc.TCButton
-							android:layout_width="match_parent" android:layout_height="wrap_content"
-							android:layout_weight="1" android:text="plus" />
+							android:id="@+id/two" android:layout_width="match_parent"
+							android:layout_height="wrap_content" android:layout_weight="1"
+							android:text="2" />
 
 
 					</LinearLayout>
 				</LinearLayout>
 
-
-
 				<pnj.project.topcalc.TCButton
 					android:id="@+id/zero" android:layout_width="match_parent"
 					android:layout_height="0dp" android:layout_weight="1" android:text="0" />
-
-
 
 			</LinearLayout>
 
@@ -291,51 +300,61 @@
 
 				<LinearLayout android:id="@+id/Col8"
 					android:layout_width="0dp" android:layout_height="match_parent"
-					android:layout_weight="1" android:background="#966"
+					android:layout_weight="1" android:background="#d4d9d6"
 					android:orientation="vertical">
 
 					<pnj.project.topcalc.TCButton
-						android:layout_width="match_parent" android:layout_height="wrap_content"
-						android:layout_weight="1" android:text="div" />
+						android:id="@+id/percent" android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:text="%" />
 					<pnj.project.topcalc.TCButton
-						android:layout_width="match_parent" android:layout_height="wrap_content"
-						android:layout_weight="1" android:text="x" />
+						android:id="@+id/nine" android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:text="9" />
 					<pnj.project.topcalc.TCButton
-						android:layout_width="match_parent" android:layout_height="wrap_content"
-						android:layout_weight="1" android:text="min" />
+						android:id="@+id/six" android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:text="6" />
 					<pnj.project.topcalc.TCButton
-						android:layout_width="match_parent" android:layout_height="wrap_content"
-						android:layout_weight="1" android:text="plus" />
-					<pnj.project.topcalc.TCButton
-						android:layout_width="match_parent" android:layout_height="wrap_content"
-						android:layout_weight="1" android:text="eq" />
+						android:id="@+id/three" android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:text="3" />
+					<pnj.project.topcalc.TCTermButton
+						android:id="@+id/decimal" android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:text="." />
 
 				</LinearLayout>
 
 				<LinearLayout android:id="@+id/col9"
 					android:layout_width="0dp" android:layout_height="match_parent"
-					android:layout_weight="1" android:background="#994"
+					android:layout_weight="1" android:background="#5ab6df"
 					android:orientation="vertical">
 
-					<pnj.project.topcalc.TCButton
-						android:layout_width="match_parent" android:layout_height="wrap_content"
-						android:layout_weight="1" android:text="div" />
+					<pnj.project.topcalc.TCTermButton
+						android:id="@+id/divide" android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:text="÷" />
 
-					<pnj.project.topcalc.TCButton
-						android:layout_width="match_parent" android:layout_height="wrap_content"
-						android:layout_weight="1" android:text="x" />
+					<pnj.project.topcalc.TCTermButton
+						android:id="@+id/multiply" android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:text="×" />
 
-					<pnj.project.topcalc.TCButton
-						android:layout_width="match_parent" android:layout_height="wrap_content"
-						android:layout_weight="1" android:text="min" />
+					<pnj.project.topcalc.TCTermButton
+						android:id="@+id/minus" android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:text="-" />
 
-					<pnj.project.topcalc.TCButton
-						android:layout_width="match_parent" android:layout_height="wrap_content"
-						android:layout_weight="1" android:text="plus" />
+					<pnj.project.topcalc.TCTermButton
+						android:id="@+id/plus" android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:text="+" />
 
-					<pnj.project.topcalc.TCButton
-						android:layout_width="match_parent" android:layout_height="wrap_content"
-						android:layout_weight="1" android:text="eq" />
+					<pnj.project.topcalc.TCTermButton
+						android:id="@+id/equals" android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:text="="/>
 
 				</LinearLayout>
 
