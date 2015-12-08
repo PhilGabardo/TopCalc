@@ -175,7 +175,7 @@
 					    android:minHeight="0dp"
 					    android:text="eⁿ" />
 
-					<pnj.project.topcalc.DeleteButton
+					<pnj.project.topcalc.TCTermButton
 						android:id="@+id/tenpown" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="10ⁿ" />
 
@@ -200,13 +200,13 @@
 					android:layout_width="match_parent" android:layout_height="0dp"
 					android:layout_weight="1" android:background="#c7cdc8"
 					android:orientation="horizontal">
-					<pnj.project.topcalc.DeleteButton
+					<pnj.project.topcalc.TCTermButton
 						android:id="@+id/cos" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="cos" />
-					<pnj.project.topcalc.DeleteButton
+					<pnj.project.topcalc.TCTermButton
 						android:id="@+id/tan" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="tan" />
-					<pnj.project.topcalc.DeleteButton
+					<pnj.project.topcalc.TCTermButton
 						android:id="@+id/mod" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="Mod" />
 				</LinearLayout>
