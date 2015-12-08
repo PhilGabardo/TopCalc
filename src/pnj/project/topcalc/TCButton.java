@@ -5,13 +5,10 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.widget.Button;
 import android.widget.Toast;
-import android.os.Handler;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 
-public class TCButton extends Button implements OnClickListener{
+public class TCButton extends Button {
 	
 	
 	
@@ -21,7 +18,7 @@ public class TCButton extends Button implements OnClickListener{
 
 	            @Override
 	        	public void onClick(View v) {
-	            	Toast.makeText(TCButton.this.getContext(), "TEST", Toast.LENGTH_LONG).show();
+	        	    updateButtonEnabling();
 	        		action();
 	        	}
 	        });    
@@ -34,7 +31,7 @@ public class TCButton extends Button implements OnClickListener{
 
 	    	@Override
         	public void onClick(View v) {
-            	Toast.makeText(TCButton.this.getContext(), "TEST", Toast.LENGTH_LONG).show();
+	    	    updateButtonEnabling();
         		action();
         	}
         });  
@@ -46,7 +43,7 @@ public class TCButton extends Button implements OnClickListener{
 
 	    	@Override
         	public void onClick(View v) {
-            	Toast.makeText(TCButton.this.getContext(), "TEST", Toast.LENGTH_LONG).show();
+	    	    updateButtonEnabling();
         		action();
         	}
         });
@@ -59,7 +56,7 @@ public class TCButton extends Button implements OnClickListener{
 
 	    	@Override
         	public void onClick(View v) {
-            	Toast.makeText(TCButton.this.getContext(), "TEST", Toast.LENGTH_LONG).show();
+	    	    updateButtonEnabling();
         		action();
         	}
         });  
@@ -72,11 +69,15 @@ public class TCButton extends Button implements OnClickListener{
 	public void action(){
 		
 	}
-
-	@Override
-	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		Toast.makeText(TCButton.this.getContext(), "TEST", Toast.LENGTH_LONG).show();
-		
+	
+	public void updateButtonEnabling(){
+		for (TCTermButton term: Calculator.tcTermButtons){
+			if (term.isValid()){
+				term.setVisibility(View.VISIBLE);
+			}
+			else{
+				term.setVisibility(View.INVISIBLE);
+			}
+		}
 	}
 }

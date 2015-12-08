@@ -1,66 +1,74 @@
 package pnj.project.topcalc;
 
+import java.util.ArrayList;
+
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
 public class TCCurrentCalculation extends TextView{
-	private TCCalculation currentCalculation;
+	ArrayList<TCTermButton> expression;
+	String answer;
 	
 	public TCCurrentCalculation(Context context) {
 	    super(context);
-	    setCurrentCalculation(new TCCalculation());
+	    expression = new ArrayList<TCTermButton>();
+	    updateDisplay();
 	}
 
 	public TCCurrentCalculation(Context context, AttributeSet attrs) {
 	    super(context, attrs);
-	    setCurrentCalculation(new TCCalculation());
+	    expression = new ArrayList<TCTermButton>();
+	    updateDisplay();
 	}
 
 	public TCCurrentCalculation(Context context, AttributeSet attrs, int defStyleAttr) {
 	    super(context, attrs, defStyleAttr);
-	    setCurrentCalculation(new TCCalculation());
+	    expression = new ArrayList<TCTermButton>();
+	    updateDisplay();
 	}
 
 	@TargetApi(21)
 	public TCCurrentCalculation(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
 	    super(context, attrs, defStyleAttr);
-	    setCurrentCalculation(new TCCalculation());
+	    expression = new ArrayList<TCTermButton>();
+	    updateDisplay();
 	}
 
 	
 	public void reset(){
-		setCurrentCalculation(new TCCalculation());
+		expression = new ArrayList<TCTermButton>();
 		updateDisplay();
 	}
 	
 	public void deleteLast(){
-		if (getCurrentCalculation().expression.size() > 0){
-			getCurrentCalculation().expression.remove(getCurrentCalculation().expression.size()-1);
-			updateDisplay();
+		if (expression.size() > 0){
+			expression.remove(expression.size()-1);
 		}
+		updateDisplay();
 	}
 	
 	public TCTermButton getLast(){
-		if (getCurrentCalculation().expression.size() > 0){
-			return getCurrentCalculation().expression.get(getCurrentCalculation().expression.size()-1);
+		if (expression.size() > 0){
+			return expression.get(expression.size()-1);
 		}
 		return null;
 	}
 	
 	public void add(TCTermButton term){
-		getCurrentCalculation().expression.add(term);
+		expression.add(term);
 		updateDisplay();
 	}
 	
 	
 	public void updateDisplay(){
-		this.setText(getCurrentCalculation().toString());
+		this.setText(toScreen());
+		this.invalidate();
 	}
 
 	public void compute() {
-		getCurrentCalculation().calculate();
+		calculate();
 		Calculator.calculationHistory.add(this);
 		Calculator.calculationHistory.resetIndex();
 		Calculator.calculationHistory.update();
@@ -70,28 +78,36 @@ public class TCCurrentCalculation extends TextView{
 		
 	}
 
-	public TCCalculation getCurrentCalculation() {
-		return currentCalculation;
-	}
-
-	public void setCurrentCalculation(TCCalculation currentCalculation) {
-		this.currentCalculation = currentCalculation;
-	}
-
 	public pnj.project.topcalc.TCTermButton.Type getLastTyped() {
-		if(getCurrentCalculation().expression.size() < 0){
+		if(expression.size() <= 0){
 			return null;
 		}
 		return getLast().type;
 	}
 	
-	public String toString(){
+	public String toStringWithAnswer(){
 		String s = "";
-		for (TCTermButton term: currentCalculation.expression){
+		for (TCTermButton term: expression){
 			s += term.term;
 		}
-		s += "=" + currentCalculation.answer;
+		s += "=" + answer;
 		return s;
+	}
+	
+	public void calculate() {
+		answer = String.valueOf(parse());
+	}
+	
+	public String toScreen(){
+		String expressionString = " ";
+		for (int i = 0; i < expression.size(); i++){
+			expressionString += expression.get(i).term;
+		}
+		return expressionString;
+	}
+	
+	public int parse(){
+		return 9;
 	}
 
 }

@@ -15,18 +15,21 @@ public class TCCalculationHistory extends TextView{
 	    super(context);
 	    history = new ArrayList<TCCurrentCalculation>();
 		indexToDisplay = -1;
+		update();
 	}
 
 	public TCCalculationHistory(Context context, AttributeSet attrs) {
 	    super(context, attrs);
 	    history = new ArrayList<TCCurrentCalculation>();
 		indexToDisplay = -1;
+		update();
 	}
 
 	public TCCalculationHistory(Context context, AttributeSet attrs, int defStyleAttr) {
 	    super(context, attrs, defStyleAttr);
 	    history = new ArrayList<TCCurrentCalculation>();
 		indexToDisplay = -1;
+		update();
 	}
 
 	@TargetApi(21)
@@ -34,6 +37,7 @@ public class TCCalculationHistory extends TextView{
 	    super(context, attrs, defStyleAttr);
 	    history = new ArrayList<TCCurrentCalculation>();
 		indexToDisplay = -1;
+		update();
 	}
 	
 	public void add(TCCurrentCalculation calc){
@@ -47,13 +51,17 @@ public class TCCalculationHistory extends TextView{
 	
 	public String answerToDisplay(){
 		if (history.size() == 0) return "";
-		return history.get(indexToDisplay).getCurrentCalculation().answer;
+		return history.get(indexToDisplay).answer;
 	}
 	
 	public void update(){
-		if (indexToDisplay > 0) {
-			this.setText(history.get(indexToDisplay).toString());
+		if (indexToDisplay >= 0) {
+			this.setText(history.get(indexToDisplay).toScreen());
+		}
+		else{
+			this.setText("");
 		}
 	}
+	
 
 }

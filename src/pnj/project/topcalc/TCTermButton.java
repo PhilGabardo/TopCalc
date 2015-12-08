@@ -26,27 +26,40 @@ public class TCTermButton extends TCButton{
 	public TCTermButton(Context context, final AttributeSet attrs) {
 	    super(context, attrs);
 	    init(attrs, context);
+
 	}
 
 	public TCTermButton(Context context, final AttributeSet attrs, int defStyleAttr) {
 	    super(context, attrs, defStyleAttr);
 	    init(attrs, context);
+
 	}
 
 	@TargetApi(21)
 	public TCTermButton(Context context, final AttributeSet attrs, int defStyleAttr, int defStyleRes) {
 	    super(context, attrs, defStyleAttr);
 	    init(attrs, context);
+
 	}
 
 	public enum Type{
-		NON_MINUS_OPERATOR, DECIMAL, INTEGER, MINUS_OPERATOR, LEFT_BRACKET, RIGHT_BRACKET
+		NON_MINUS_OPERATOR(0), DECIMAL(1), INTEGER(2), MINUS_OPERATOR(3), LEFT_BRACKET(4), RIGHT_BRACKET(5);
+		int id;
+		Type(int id) {
+	        this.id = id;
+	    }
+		static Type fromId(int id) {
+	        for (Type t : values()) {
+	            if (t.id == id) return t;
+	        }
+	        throw new IllegalArgumentException();
+	    }
 	}
 	
 	
 	
 	
-	public boolean isPressable(){
+	public boolean isValid(){
 		Type lastType = Calculator.currentCalculation.getLastTyped();
 		if (lastType == null){
 			return true;
@@ -79,10 +92,12 @@ public class TCTermButton extends TCButton{
 	private void init(AttributeSet attrs, Context context){
 	    TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.TCTermButton);
 	    final String des = a.getString(R.styleable.TCTermButton_description);
+	    this.type = Type.fromId(a.getInt(R.styleable.TCTermButton_type, 0));
+	    term = a.getString(R.styleable.TCTermButton_term);
 	    setOnLongClickListener(new View.OnLongClickListener(){
 	        @Override
 	         public boolean onLongClick(View v) {
-	        	Toast.makeText(getContext(), des, Toast.LENGTH_LONG).show();;
+	        	Toast.makeText(getContext(), des + type, Toast.LENGTH_LONG).show();;
 	        	return true;
 	        }
 	        });
@@ -91,6 +106,6 @@ public class TCTermButton extends TCButton{
 
 	@Override
 	public void action() {
-		//Calculator.currentCalculation.add(this);
+		Calculator.currentCalculation.add(this);
 	}
 }
