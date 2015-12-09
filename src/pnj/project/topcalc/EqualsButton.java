@@ -1,5 +1,6 @@
 package pnj.project.topcalc;
 
+import expr.SyntaxException;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.util.AttributeSet;
@@ -25,7 +26,8 @@ public class EqualsButton extends TCButton{
 	}
 	
 	@Override
-	public void action() {
+	public void action() throws SyntaxException {
+		
 		Calculator.currentCalculation.compute();
 		
 		

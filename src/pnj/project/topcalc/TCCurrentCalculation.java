@@ -2,6 +2,9 @@ package pnj.project.topcalc;
 
 import java.util.ArrayList;
 
+import expr.Expr;
+import expr.Parser;
+import expr.SyntaxException;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.util.AttributeSet;
@@ -10,6 +13,7 @@ import android.widget.TextView;
 public class TCCurrentCalculation extends TextView{
 	ArrayList<TCTermButton> expression;
 	String answer;
+	
 	
 	public TCCurrentCalculation(Context context) {
 	    super(context);
@@ -67,9 +71,9 @@ public class TCCurrentCalculation extends TextView{
 		this.invalidate();
 	}
 
-	public void compute() {
+	public void compute() throws SyntaxException {
 		calculate();
-		Calculator.calculationHistory.add(this);
+		Calculator.calculationHistory.add(new Calculation(this));
 		Calculator.calculationHistory.resetIndex();
 		Calculator.calculationHistory.update();
 		Calculator.answer.update();
@@ -94,7 +98,7 @@ public class TCCurrentCalculation extends TextView{
 		return s;
 	}
 	
-	public void calculate() {
+	public void calculate() throws SyntaxException {
 		answer = String.valueOf(parse());
 	}
 	
@@ -106,8 +110,10 @@ public class TCCurrentCalculation extends TextView{
 		return expressionString;
 	}
 	
-	public int parse(){
-		return 9;
+	public double parse() throws SyntaxException{
+		Expr expr;
+		expr = Parser.parse(toScreen().replace(" ", "")); 
+		return expr.value();
 	}
 
 }

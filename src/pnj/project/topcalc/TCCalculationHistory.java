@@ -8,26 +8,26 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 public class TCCalculationHistory extends TextView{
-	static ArrayList<TCCurrentCalculation> history;
+	static ArrayList<Calculation> history;
 	int indexToDisplay;
 	
 	public TCCalculationHistory(Context context) {
 	    super(context);
-	    history = new ArrayList<TCCurrentCalculation>();
+	    history = new ArrayList<Calculation>();
 		indexToDisplay = -1;
 		update();
 	}
 
 	public TCCalculationHistory(Context context, AttributeSet attrs) {
 	    super(context, attrs);
-	    history = new ArrayList<TCCurrentCalculation>();
+	    history = new ArrayList<Calculation>();
 		indexToDisplay = -1;
 		update();
 	}
 
 	public TCCalculationHistory(Context context, AttributeSet attrs, int defStyleAttr) {
 	    super(context, attrs, defStyleAttr);
-	    history = new ArrayList<TCCurrentCalculation>();
+	    history = new ArrayList<Calculation>();
 		indexToDisplay = -1;
 		update();
 	}
@@ -35,12 +35,12 @@ public class TCCalculationHistory extends TextView{
 	@TargetApi(21)
 	public TCCalculationHistory(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
 	    super(context, attrs, defStyleAttr);
-	    history = new ArrayList<TCCurrentCalculation>();
+	    history = new ArrayList<Calculation>();
 		indexToDisplay = -1;
 		update();
 	}
 	
-	public void add(TCCurrentCalculation calc){
+	public void add(Calculation calc){
 		history.add(calc);
 		indexToDisplay++;
 	}
@@ -59,7 +59,7 @@ public class TCCalculationHistory extends TextView{
 			this.setText(history.get(indexToDisplay).toScreen());
 		}
 		else{
-			this.setText("RESET");
+			this.setText(" ");
 		}
 	}
 	

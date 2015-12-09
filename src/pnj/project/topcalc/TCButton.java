@@ -1,5 +1,6 @@
 package pnj.project.topcalc;
 
+import expr.SyntaxException;
 import android.annotation.TargetApi;
 
 import android.content.Context;
@@ -19,7 +20,12 @@ public class TCButton extends Button {
 	            @Override
 	        	public void onClick(View v) {
 	        	    updateButtonEnabling();
-	        		action();
+	        		try {
+						action();
+					} catch (SyntaxException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 	        	}
 	        });    
 		
@@ -32,7 +38,12 @@ public class TCButton extends Button {
 	    	@Override
         	public void onClick(View v) {
 	    	    updateButtonEnabling();
-        		action();
+        		try {
+					action();
+				} catch (SyntaxException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
         	}
         });  
 	}
@@ -44,7 +55,12 @@ public class TCButton extends Button {
 	    	@Override
         	public void onClick(View v) {
 	    	    updateButtonEnabling();
-        		action();
+        		try {
+					action();
+				} catch (SyntaxException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
         	}
         });
 	}
@@ -57,7 +73,12 @@ public class TCButton extends Button {
 	    	@Override
         	public void onClick(View v) {
 	    	    updateButtonEnabling();
-        		action();
+        		try {
+					action();
+				} catch (SyntaxException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
         	}
         });  
 	}
@@ -66,7 +87,7 @@ public class TCButton extends Button {
 
 
 	
-	public void action(){
+	public void action() throws SyntaxException{
 		
 	}
 	
