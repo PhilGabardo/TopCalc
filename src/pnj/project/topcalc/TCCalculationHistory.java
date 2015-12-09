@@ -5,9 +5,10 @@ import java.util.ArrayList;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.util.AttributeSet;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class TCCalculationHistory extends TextView{
+public class TCCalculationHistory extends RelativeLayout{
 	static ArrayList<Calculation> history;
 	int indexToDisplay;
 	
@@ -56,10 +57,17 @@ public class TCCalculationHistory extends TextView{
 	
 	public void update(){
 		if (indexToDisplay >= 0) {
-			this.setText(history.get(indexToDisplay).toScreen());
+			//this.setText(history.get(indexToDisplay).toScreen());
+			
+		String[] equation =history.get(indexToDisplay).toScreen().split("=");
+		((TextView)findViewById(R.id.theanswerbox)).setText(equation[1]);
+		((TextView)findViewById(R.id.PrevCalc)).setText(equation[0]+" = ");
+		
 		}
 		else{
-			this.setText(" ");
+			if(((TextView)findViewById(R.id.theanswerbox))!=null){
+				((TextView)findViewById(R.id.theanswerbox)).setText(" ");
+			}
 		}
 	}
 	

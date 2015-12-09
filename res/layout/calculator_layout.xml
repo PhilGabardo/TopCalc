@@ -49,48 +49,48 @@
 
 		</LinearLayout>
 
-		<LinearLayout android:id="@+id/PrevnCurrentBox"
+<LinearLayout android:id="@+id/PrevnCurrentBox"
 			android:layout_width="0dp" android:layout_height="match_parent"
 			android:layout_weight="7" android:background="#e9e5cb"
 			android:orientation="vertical">
 
-<RelativeLayout
-    android:id="@+id/Slider"
-    android:layout_width="match_parent"
-   
-    android:layout_height="wrap_content"
-    android:orientation="horizontal" >
-    
-    <pnj.project.topcalc.TCCalculationHistory
+  <pnj.project.topcalc.TCCalculationHistory
+      android:id="@+id/Slider"
+      android:layout_width="match_parent"
+      android:orientation="horizontal" 
+      android:layout_weight="2"
+      android:layout_height="0dp">
+
+    <TextView
         android:id="@+id/PrevCalc"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_toLeftOf="@+id/theanswerbox"
-        android:gravity="end|center_vertical"
-        android:text="PrevCalc"
+        android:gravity="right|center_vertical"
         android:textSize="20sp" />
 
-    <pnj.project.topcalc.TCCalculationHistory
+    <TextView
         android:id="@+id/theanswerbox"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:background="#008000"
         android:gravity="right|center_vertical"
-        android:text="ans"
         android:textColor="#fff"
         android:textSize="20sp" />
     
-</RelativeLayout>
+</pnj.project.topcalc.TCCalculationHistory>
 			
 			<pnj.project.topcalc.TCCurrentCalculation
 				android:id="@+id/MainCalc" android:layout_width="match_parent"
 				android:gravity="right|center_vertical"
-				android:layout_height="match_parent" android:textSize="32sp" android:text="MainCalc" />
-
-
-
+				android:textSize="32sp" 
+				android:layout_height="0dp"
+				   android:layout_weight="3" android:text="MainCalc" >
+			    
+			</pnj.project.topcalc.TCCurrentCalculation>
+			
 		</LinearLayout>
 
 

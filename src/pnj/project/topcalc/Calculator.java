@@ -32,7 +32,9 @@ public class Calculator extends Activity {
 		EqualsButton equals = (EqualsButton) findViewById(R.id.equals);
 		DeleteButton delete= (DeleteButton) findViewById(R.id.delete);
 		currentCalculation = (TCCurrentCalculation) findViewById(R.id.MainCalc);
-		calculationHistory = (TCCalculationHistory) findViewById(R.id.PrevCalc);
+		calculationHistory = (TCCalculationHistory) findViewById(R.id.Slider);
+		
+		
 		tcTermButtons = new ArrayList<TCTermButton>();
 		tcTermButtons.add((TCTermButton) findViewById(R.id.LBracket));
 		tcTermButtons.add((TCTermButton) findViewById(R.id.RBracket));
