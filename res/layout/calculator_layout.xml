@@ -115,12 +115,12 @@
 					android:id="@+id/LBracket" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
 					myapp:description = "BRACKETtest"
-					myapp:type = "NON_MINUS_OPERATOR"
+					myapp:type = "BINARY_OPERATOR"
 					android:text="(" />
 
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = ")"
-				    myapp:type = "NON_MINUS_OPERATOR"
+				    myapp:type = "BINARY_OPERATOR"
 					android:id="@+id/RBracket" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
 					android:text=")" />
@@ -131,14 +131,14 @@
 				android:orientation="horizontal">
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "^2"
-				    myapp:type = "NON_MINUS_OPERATOR"
+				    myapp:type = "BINARY_OPERATOR"
 					android:id="@+id/xpow2" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
 					android:text="x²" />
 
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "^3"
-				    myapp:type = "NON_MINUS_OPERATOR"
+				    myapp:type = "BINARY_OPERATOR"
 					android:id="@+id/xpow3" android:layout_height="match_parent"
 					android:layout_width="0dp" android:layout_weight="1" android:text="x³" />
 			</LinearLayout>
@@ -148,14 +148,14 @@
 				android:orientation="horizontal">
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "sqrt("
-				    myapp:type = "NON_MINUS_OPERATOR"
+				    myapp:type = "BINARY_OPERATOR"
 					android:id="@+id/sqrt" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
 					android:text="√x" />
 
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "^(1/3)"
-				    myapp:type = "NON_MINUS_OPERATOR"
+				    myapp:type = "BINARY_OPERATOR"
 					android:id="@+id/thirdrt" android:layout_height="match_parent"
 					android:layout_width="0dp" android:layout_weight="1" android:text="³√x" />
 			</LinearLayout>
@@ -165,14 +165,14 @@
 				android:orientation="horizontal">
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "!"
-				    myapp:type = "NON_MINUS_OPERATOR"
+				    myapp:type = "BINARY_OPERATOR"
 					android:id="@+id/factorial" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
 					android:text="x!" />
 
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "sin"
-				    myapp:type = "NON_MINUS_OPERATOR"
+				    myapp:type = "BINARY_OPERATOR"
 					android:id="@+id/sin" android:layout_height="match_parent"
 					android:layout_width="0dp" android:layout_weight="1" android:text="sin" />
 			</LinearLayout>
@@ -181,14 +181,14 @@
 				android:layout_weight="1" android:background="#c7cdc8"
 				android:orientation="horizontal">
 				<pnj.project.topcalc.TCTermButton
-				    myapp:type = "NON_MINUS_OPERATOR"
+				    myapp:type = "BINARY_OPERATOR"
 					android:id="@+id/abs" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
 					android:text="abs" />
 
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "sinInv"
-				    myapp:type = "NON_MINUS_OPERATOR"
+				    myapp:type = "BINARY_OPERATOR"
 					android:id="@+id/sinInv" android:layout_height="match_parent"
 					android:layout_width="0dp" android:layout_weight="1" android:text="sin¹"
 					android:textAllCaps="false" />
@@ -203,6 +203,8 @@
 			android:orientation="vertical">
 
 			<pnj.project.topcalc.TCAnswerButton
+			    android:singleLine="true"
+  				android:ellipsize="end"
 			    android:id="@+id/AnswerButton"
 			    android:layout_width="match_parent"
 			    android:layout_height="0dp"
@@ -228,14 +230,14 @@
 
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "^"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/xpown" android:layout_width="0dp"
 						android:layout_height="match_parent" android:layout_weight="1"
 						android:text="xⁿ" />
 
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "exp^"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 					    android:id="@+id/epowx"
 					    android:layout_width="0dp"
 					    android:layout_height="match_parent"
@@ -245,7 +247,7 @@
 
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "10^"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/tenpown" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="10ⁿ" />
 
@@ -258,18 +260,18 @@
 					android:orientation="horizontal">
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "^(1/"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/xrty" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="x\u02b8"
 						android:fontFamily="sans-serif" />
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "ln"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/ln" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="ln" />
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "log"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/log" android:layout_height="match_parent"
 						android:textSize="12dp"
 						android:layout_width="0dp" android:layout_weight="1" android:text="log10" />
@@ -280,17 +282,17 @@
 					android:orientation="horizontal">
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "cos"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/cos" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="cos" />
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "tan"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/tan" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="tan" />
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "mod"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/mod" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="Mod" />
 				</LinearLayout>
@@ -301,17 +303,17 @@
 					android:orientation="horizontal">
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "cosinv"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/cosinv" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="cos¹" />
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "taninv"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/taninv" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="tan¹" />
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "pi"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/pi" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="π" />
 				</LinearLayout>
@@ -350,19 +352,19 @@
 						</LinearLayout>
 						<pnj.project.topcalc.TCTermButton
 						    myapp:term = "7"
-						    myapp:type = "NON_MINUS_OPERATOR"
+						    myapp:type = "BINARY_OPERATOR"
 							android:id="@+id/seven" android:layout_width="match_parent"
 							android:layout_height="wrap_content" android:layout_weight="1"
 							android:text="7" />
 						<pnj.project.topcalc.TCTermButton
 						    myapp:term = "4"
-						    myapp:type = "NON_MINUS_OPERATOR"
+						    myapp:type = "BINARY_OPERATOR"
 							android:id="@+id/four" android:layout_width="match_parent"
 							android:layout_height="wrap_content" android:layout_weight="1"
 							android:text="4" />
 						<pnj.project.topcalc.TCTermButton
 						    myapp:term = "1"
-						    myapp:type = "NON_MINUS_OPERATOR"
+						    myapp:type = "BINARY_OPERATOR"
 							android:id="@+id/one" android:layout_width="match_parent"
 							android:layout_height="wrap_content" android:layout_weight="1"
 							android:text="1" />
@@ -387,19 +389,19 @@
 						</LinearLayout>
 						<pnj.project.topcalc.TCTermButton
 						    myapp:term = "8"
-						    myapp:type = "NON_MINUS_OPERATOR"
+						    myapp:type = "BINARY_OPERATOR"
 							android:id="@+id/eight" android:layout_width="match_parent"
 							android:layout_height="wrap_content" android:layout_weight="1"
 							android:text="8" />
 						<pnj.project.topcalc.TCTermButton
 						    myapp:term = "5"
-						    myapp:type = "NON_MINUS_OPERATOR"
+						    myapp:type = "BINARY_OPERATOR"
 							android:id="@+id/five" android:layout_width="match_parent"
 							android:layout_height="wrap_content" android:layout_weight="1"
 							android:text="5" />
 						<pnj.project.topcalc.TCTermButton
 						    myapp:term = "2"
-						    myapp:type = "NON_MINUS_OPERATOR"
+						    myapp:type = "BINARY_OPERATOR"
 							android:id="@+id/two" android:layout_width="match_parent"
 							android:layout_height="wrap_content" android:layout_weight="1"
 							android:text="2" />
@@ -410,7 +412,7 @@
 
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "0"
-				    myapp:type = "NON_MINUS_OPERATOR"
+				    myapp:type = "BINARY_OPERATOR"
 					android:id="@+id/zero" android:layout_width="match_parent"
 					android:layout_height="0dp" android:layout_weight="1" android:text="0" />
 
@@ -428,31 +430,31 @@
 
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "%"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/percent" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="%" />
 					<pnj.project.topcalc.TCTermButton
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 					    myapp:term = "9"
 						android:id="@+id/nine" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="9" />
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "6"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/six" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="6" />
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "3"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/three" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="3" />
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "."
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/decimal" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="." />
@@ -466,28 +468,28 @@
 
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "/"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/divide" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="÷" />
 
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "x"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/multiply" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="×" />
 
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "-"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/minus" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="-" />
 
 					<pnj.project.topcalc.TCTermButton description="ADDTEST"
 					    myapp:term = "+"
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/plus" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="+" />
@@ -495,7 +497,7 @@
 
 					<pnj.project.topcalc.EqualsButton
 					    myapp:term = "="
-					    myapp:type = "NON_MINUS_OPERATOR"
+					    myapp:type = "BINARY_OPERATOR"
 						android:id="@+id/equals" android:layout_width="match_parent"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:text="="/>

@@ -5,13 +5,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.TypedArray;
-import android.os.Handler;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
-import android.widget.Button;
-import android.widget.Toast;
 
 public class TCTermButton extends TCButton{
 	
@@ -46,7 +41,7 @@ public class TCTermButton extends TCButton{
 	}
 
 	public enum Type{
-		NON_MINUS_OPERATOR(0), DECIMAL(1), INTEGER(2), MINUS_OPERATOR(3), LEFT_BRACKET(4), RIGHT_BRACKET(5);
+		UNARY_OPERATOR(0), BINARY_OPERATOR(1), DECIMAL(2), NUMBER(3), MINUS_OPERATOR(4), LEFT_BRACKET(5), RIGHT_BRACKET(6);
 		int id;
 		Type(int id) {
 	        this.id = id;
@@ -67,26 +62,83 @@ public class TCTermButton extends TCButton{
 		if (lastType == null){
 			return true;
 		}
-		if (type == Type.NON_MINUS_OPERATOR){
+		if (type == Type.UNARY_OPERATOR){
+			if (lastType == Type.NUMBER){
+				return false;
+			}
+			if (lastType == Type.RIGHT_BRACKET){
+				return false;
+			}
 			if (lastType == Type.DECIMAL){
 				return false;
 			}
 			return true;
 		}
-		if (type == Type.NON_MINUS_OPERATOR){
+		if (type == Type.BINARY_OPERATOR){
+			if (lastType == Type.UNARY_OPERATOR){
+				return false;
+			}
+			if (lastType == Type.BINARY_OPERATOR){
+				return false;
+			}
+			if (lastType == Type.DECIMAL){
+				return false;
+			}
+			if (lastType == Type.MINUS_OPERATOR){
+				return false;
+			}
+			if (lastType == Type.LEFT_BRACKET){
+				return false;
+			}
 			return true;
 		}
-		if (type == Type.NON_MINUS_OPERATOR){
+		if (type == Type.DECIMAL){
+			if (lastType != Type.NUMBER){
+				return false;
+			}
 			return true;
 		}
-		if (type == Type.NON_MINUS_OPERATOR){
+		if (type == Type.NUMBER){
+			if (lastType != Type.RIGHT_BRACKET){
+				return false;
+			}
 			return true;
 		}
-		if (type == Type.NON_MINUS_OPERATOR){
+		if (type == Type.MINUS_OPERATOR){
+			if (lastType != Type.MINUS_OPERATOR){
+				return false;
+			}
 			return true;
 		}
-		if (type == Type.NON_MINUS_OPERATOR){
-			return true;
+		if (type == Type.LEFT_BRACKET){
+			if (lastType == Type.DECIMAL){
+				return false;
+			}
+			if (lastType == Type.NUMBER){
+				return false;
+			}
+			if (lastType == Type.RIGHT_BRACKET){
+				return false;
+			}
+			return false;
+		}
+		if (type == Type.RIGHT_BRACKET){
+			if (lastType == Type.UNARY_OPERATOR){
+				return false;
+			}
+			if (lastType == Type.BINARY_OPERATOR){
+				return false;
+			}
+			if (lastType == Type.DECIMAL){
+				return false;
+			}
+			if (lastType == Type.MINUS_OPERATOR){
+				return false;
+			}
+			if (lastType == Type.LEFT_BRACKET){
+				return false;
+			}
+			return false;
 		}
 		return true;
 	}

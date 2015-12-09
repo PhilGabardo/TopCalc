@@ -27,8 +27,9 @@ public class EqualsButton extends TCButton{
 	
 	@Override
 	public void action() throws SyntaxException {
-		
-		Calculator.currentCalculation.compute();
+		if (Calculator.currentCalculation.expression.size() > 0){
+			Calculator.currentCalculation.compute();
+		}
 		
 		
 	}

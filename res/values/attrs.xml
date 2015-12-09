@@ -4,12 +4,13 @@
         <attr name="description" format="string" />
         <attr name="term" format="string" />
         <attr name="type" format="enum">
-        <enum name="NON_MINUS_OPERATOR" value="0"/>
-        <enum name="DECIMAL" value="1"/>
-        <enum name="INTEGER" value="2"/>
-        <enum name="MINUS_OPERATOR" value="3"/>
-        <enum name="LEFT_BRACKET" value="4"/>
-        <enum name="RIGHT_BRACKET" value="5"/>
+        <enum name="UNARY_OPERATOR" value="0"/>
+        <enum name="BINARY_OPERATOR" value="1"/>
+        <enum name="DECIMAL" value="2"/>
+        <enum name="NUMBER" value="3"/>
+        <enum name="MINUS_OPERATOR" value="4"/>
+        <enum name="LEFT_BRACKET" value="5"/>
+        <enum name="RIGHT_BRACKET" value="6"/>
    		</attr>
     </declare-styleable> 
     <declare-styleable name="HistoryControlButton">

@@ -1,7 +1,5 @@
 package pnj.project.topcalc;
 
-import java.util.ArrayList;
-
 public class Calculation {
 	String terms;
 	String answer;
