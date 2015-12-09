@@ -54,11 +54,36 @@
 			android:layout_weight="7" android:background="#e9e5cb"
 			android:orientation="vertical">
 
-			<pnj.project.topcalc.TCCalculationHistory android:id="@+id/PrevCalc" android:layout_width="match_parent"
-				android:layout_height="wrap_content" android:text="PrevCalc" 
-				android:gravity="right|center_vertical" android:textSize="20sp" />
+<RelativeLayout
+    android:id="@+id/Slider"
+    android:layout_width="match_parent"
+   
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <pnj.project.topcalc.TCCalculationHistory
+        android:id="@+id/PrevCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/theanswerbox"
+        android:gravity="end|center_vertical"
+        android:text="PrevCalc"
+        android:textSize="20sp" />
 
-
+    <pnj.project.topcalc.TCCalculationHistory
+        android:id="@+id/theanswerbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#008000"
+        android:gravity="right|center_vertical"
+        android:text="ans"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    
+</RelativeLayout>
+			
 			<pnj.project.topcalc.TCCurrentCalculation
 				android:id="@+id/MainCalc" android:layout_width="match_parent"
 				android:gravity="right|center_vertical"
