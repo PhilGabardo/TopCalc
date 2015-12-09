@@ -13,7 +13,9 @@
 		<pnj.project.topcalc.HelpButton
 			android:id="@+id/HelpButton" android:layout_width="0dp"
 			android:layout_height="wrap_content" android:layout_weight="1"
-			android:text="\?" />
+			android:text="\?" 
+			android:layout_gravity="center_vertical"
+			android:textColor="#fff"/>
 
 		<LinearLayout android:id="@+id/History"
 			android:layout_width="0dp" android:layout_height="match_parent"
@@ -21,15 +23,30 @@
 			android:orientation="vertical">
 
 			<pnj.project.topcalc.HistoryControlButton
-			    myapp:direction="0"
-				android:id="@+id/UpButton" android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="u" />
-
+			    android:id="@+id/UpButton"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:text="↑"
+			    myapp:direction="0" 
+			    android:textColor="#fff"
+			    android:layout_gravity="center_horizontal"/>
+			
+			<ImageView
+			    android:id="@+id/clock"
+			    android:layout_width="24dp"
+			    android:layout_height="24dp"
+			    android:layout_gravity="center_horizontal"
+			    android:src="@drawable/clock" />
 
 			<pnj.project.topcalc.HistoryControlButton
+			    android:id="@+id/DownButton"
+			   android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:text="↓"
 			    myapp:direction="1"
-				android:id="@+id/DownButton" android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="d" />
+			    android:textColor="#fff"
+			    android:layout_gravity="center_horizontal" />
+
 		</LinearLayout>
 
 		<LinearLayout android:id="@+id/PrevnCurrentBox"
@@ -39,7 +56,7 @@
 
 			<pnj.project.topcalc.TCCalculationHistory android:id="@+id/PrevCalc" android:layout_width="match_parent"
 				android:layout_height="wrap_content" android:text="PrevCalc" 
-				android:gravity="right|center_vertical"/>
+				android:gravity="right|center_vertical" android:textSize="20sp" />
 
 
 			<pnj.project.topcalc.TCCurrentCalculation
@@ -140,9 +157,9 @@
 				android:orientation="horizontal">
 				<pnj.project.topcalc.TCTermButton
 				    myapp:type = "NON_MINUS_OPERATOR"
-					android:id="@+id/radians" android:layout_width="0dp"
+					android:id="@+id/abs" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
-					android:text="Rad" />
+					android:text="abs" />
 
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "sinInv"
@@ -168,8 +185,11 @@
 			    android:minHeight="0dp"
 			    android:minWidth="0dp"
 			    android:padding="0dp"
+			    android:textSize="30sp" 
 			    android:hint="Saved Answer"
-			    android:text="Answer" />
+			    android:textColor="#fff"
+			    android:text="Answer" 
+			    android:textStyle="bold"/>
 
 			<LinearLayout android:id="@+id/NonAnsBlock"
 				android:layout_width="match_parent" android:layout_height="0dp"
@@ -215,7 +235,8 @@
 					    myapp:term = "rt("
 					    myapp:type = "NON_MINUS_OPERATOR"
 						android:id="@+id/xrty" android:layout_height="match_parent"
-						android:layout_width="0dp" android:layout_weight="1" android:text="yrtx" />
+						android:layout_width="0dp" android:layout_weight="1" android:text="x\u02b8"
+						android:fontFamily="sans-serif" />
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "ln"
 					    myapp:type = "NON_MINUS_OPERATOR"
@@ -225,6 +246,7 @@
 					    myapp:term = "log"
 					    myapp:type = "NON_MINUS_OPERATOR"
 						android:id="@+id/log" android:layout_height="match_parent"
+						android:textSize="12dp"
 						android:layout_width="0dp" android:layout_weight="1" android:text="log10" />
 				</LinearLayout>
 				<LinearLayout android:id="@+id/R4B2"
