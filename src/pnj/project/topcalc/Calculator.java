@@ -65,7 +65,7 @@ public class Calculator extends Activity {
 		tcTermButtons.add((TCTermButton) findViewById(R.id.two));
 		tcTermButtons.add((TCTermButton) findViewById(R.id.three));
 		tcTermButtons.add((TCTermButton) findViewById(R.id.plus));
-		tcTermButtons.add((TCTermButton) findViewById(R.id.radians));
+		tcTermButtons.add((TCTermButton) findViewById(R.id.abs));
 		tcTermButtons.add((TCTermButton) findViewById(R.id.sinInv));
 		tcTermButtons.add((TCTermButton) findViewById(R.id.cosinv));
 		tcTermButtons.add((TCTermButton) findViewById(R.id.taninv));

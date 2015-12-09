@@ -2,3 +2,5 @@
 bin/resources.ap_
 
 bin/Calculator.apk
+
+*.class

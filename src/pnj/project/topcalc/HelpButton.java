@@ -20,7 +20,6 @@ public class HelpButton extends TCButton {
         	public void onClick(View v) {
             	
             	openAlert(v,"Help",getContext().getString(R.string.dialog_help));
-            	action();
         	}
         });    
 	}
@@ -32,7 +31,6 @@ public class HelpButton extends TCButton {
 	    	@Override
         	public void onClick(View v) {
 	    			openAlert(v,"Help",getContext().getString(R.string.dialog_help));
-	    		action();
         	}
         });  
 	}
@@ -44,7 +42,6 @@ public class HelpButton extends TCButton {
 	    	@Override
         	public void onClick(View v) {
 	    			openAlert(v,"Help",getContext().getString(R.string.dialog_help));
-            	action();
         	}
         });
 	}
@@ -57,7 +54,6 @@ public class HelpButton extends TCButton {
 	    	@Override
         	public void onClick(View v) {
 	    			openAlert(v,"Help",getContext().getString(R.string.dialog_help));
-        		action();
         	}
         });  
 	}

@@ -122,14 +122,14 @@
 				android:layout_weight="1" android:background="#c7cdc8"
 				android:orientation="horizontal">
 				<pnj.project.topcalc.TCTermButton
-				    myapp:term = "2rt("
+				    myapp:term = "sqrt("
 				    myapp:type = "NON_MINUS_OPERATOR"
 					android:id="@+id/sqrt" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
 					android:text="√x" />
 
 				<pnj.project.topcalc.TCTermButton
-				    myapp:term = "3rt("
+				    myapp:term = "^(1/3)"
 				    myapp:type = "NON_MINUS_OPERATOR"
 					android:id="@+id/thirdrt" android:layout_height="match_parent"
 					android:layout_width="0dp" android:layout_weight="1" android:text="³√x" />
@@ -232,7 +232,7 @@
 					android:layout_weight="1" android:background="#c7cdc8"
 					android:orientation="horizontal">
 					<pnj.project.topcalc.TCTermButton
-					    myapp:term = "rt("
+					    myapp:term = "^(1/"
 					    myapp:type = "NON_MINUS_OPERATOR"
 						android:id="@+id/xrty" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="x\u02b8"
