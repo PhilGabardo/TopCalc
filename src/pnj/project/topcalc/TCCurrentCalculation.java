@@ -82,7 +82,7 @@ public class TCCurrentCalculation extends TextView{
 		
 	}
 
-	public pnj.project.topcalc.TCTermButton.Type getLastTyped() {
+	public pnj.project.topcalc.TCTermButton.Type getLastType() {
 		if(expression.size() <= 0){
 			return null;
 		}

@@ -27,6 +27,7 @@ public class DeleteButton extends TCButton{
 	@Override
 	public void action() {
 		Calculator.currentCalculation.deleteLast();
+	    RefreshButtonEnabling.refresh();
 	}
 
 }

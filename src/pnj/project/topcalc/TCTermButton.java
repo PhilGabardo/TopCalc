@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 public class TCTermButton extends TCButton{
@@ -58,8 +59,12 @@ public class TCTermButton extends TCButton{
 	
 	
 	public boolean isValid(){
-		Type lastType = Calculator.currentCalculation.getLastTyped();
+		Type lastType = Calculator.currentCalculation.getLastType();
+		Log.e("LASTTYPE2", String.valueOf(lastType));
 		if (lastType == null){
+			if (type == Type.RIGHT_BRACKET){
+				return false;
+			}
 			return true;
 		}
 		if (type == Type.UNARY_OPERATOR){
@@ -99,13 +104,13 @@ public class TCTermButton extends TCButton{
 			return true;
 		}
 		if (type == Type.NUMBER){
-			if (lastType != Type.RIGHT_BRACKET){
+			if (lastType == Type.RIGHT_BRACKET){
 				return false;
 			}
 			return true;
 		}
 		if (type == Type.MINUS_OPERATOR){
-			if (lastType != Type.MINUS_OPERATOR){
+			if (lastType == Type.MINUS_OPERATOR){
 				return false;
 			}
 			return true;
@@ -120,7 +125,7 @@ public class TCTermButton extends TCButton{
 			if (lastType == Type.RIGHT_BRACKET){
 				return false;
 			}
-			return false;
+			return true;
 		}
 		if (type == Type.RIGHT_BRACKET){
 			if (lastType == Type.UNARY_OPERATOR){
@@ -138,7 +143,7 @@ public class TCTermButton extends TCButton{
 			if (lastType == Type.LEFT_BRACKET){
 				return false;
 			}
-			return false;
+			return true;
 		}
 		return true;
 	}

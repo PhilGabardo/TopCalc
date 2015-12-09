@@ -72,6 +72,7 @@ public class Calculator extends Activity {
 		tcTermButtons.add((TCTermButton) findViewById(R.id.pi));
 		tcTermButtons.add((TCTermButton) findViewById(R.id.zero));
 		tcTermButtons.add((TCTermButton) findViewById(R.id.decimal));	
+		RefreshButtonEnabling.refresh();
 	}
 
 	@Override

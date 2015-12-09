@@ -19,7 +19,7 @@ public class TCButton extends Button {
 
 	            @Override
 	        	public void onClick(View v) {
-	        	    updateButtonEnabling();
+		    	    RefreshButtonEnabling.refresh();
 	        		try {
 						action();
 					} catch (SyntaxException e) {
@@ -27,8 +27,9 @@ public class TCButton extends Button {
 						e.printStackTrace();
 					}
 	        	}
+	            
 	        });    
-		
+	    RefreshButtonEnabling.refresh();
 	}
 
 	public TCButton(Context context, AttributeSet attrs) {
@@ -37,13 +38,14 @@ public class TCButton extends Button {
 
 	    	@Override
         	public void onClick(View v) {
-	    	    updateButtonEnabling();
+	    	    
         		try {
 					action();
 				} catch (SyntaxException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+        		RefreshButtonEnabling.refresh();
         	}
         });  
 	}
@@ -54,13 +56,14 @@ public class TCButton extends Button {
 
 	    	@Override
         	public void onClick(View v) {
-	    	    updateButtonEnabling();
+	    	    
         		try {
 					action();
 				} catch (SyntaxException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+        		RefreshButtonEnabling.refresh();
         	}
         });
 	}
@@ -72,13 +75,14 @@ public class TCButton extends Button {
 
 	    	@Override
         	public void onClick(View v) {
-	    	    updateButtonEnabling();
+	    	    
         		try {
 					action();
 				} catch (SyntaxException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+        		RefreshButtonEnabling.refresh();
         	}
         });  
 	}
@@ -91,14 +95,4 @@ public class TCButton extends Button {
 		
 	}
 	
-	public void updateButtonEnabling(){
-		for (TCTermButton term: Calculator.tcTermButtons){
-			if (term.isValid()){
-				term.setVisibility(View.VISIBLE);
-			}
-			else{
-				term.setVisibility(View.INVISIBLE);
-			}
-		}
-	}
 }

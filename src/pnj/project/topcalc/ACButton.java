@@ -27,7 +27,7 @@ public class ACButton extends TCButton{
 	@Override
 	public void action() {
 		Calculator.currentCalculation.reset();
-		
+	    RefreshButtonEnabling.refresh();
 	}
 	
 	

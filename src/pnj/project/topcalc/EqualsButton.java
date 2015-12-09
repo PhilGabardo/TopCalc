@@ -29,6 +29,7 @@ public class EqualsButton extends TCButton{
 	public void action() throws SyntaxException {
 		if (Calculator.currentCalculation.expression.size() > 0){
 			Calculator.currentCalculation.compute();
+    	    RefreshButtonEnabling.refresh();
 		}
 		
 		
