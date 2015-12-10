@@ -6,10 +6,12 @@ public class RefreshButtonEnabling {
 	public static void refresh(){
 		for (TCTermButton term: Calculator.tcTermButtons){
 			if (term.isValid()){
-				term.setVisibility(View.VISIBLE);
+			
+				term.setEnabled(true);
 			}
 			else{
-				term.setVisibility(View.INVISIBLE);
+				
+				term.setEnabled(false);
 			}
 		}
 	}
