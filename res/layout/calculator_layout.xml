@@ -313,7 +313,7 @@
 						android:id="@+id/taninv" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="tan¹" />
 					<pnj.project.topcalc.TCTermButton
-					    myapp:term = "pi"
+					    myapp:term = "π"
 					    myapp:type = "NUMBER"
 						android:id="@+id/pi" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="π" />
