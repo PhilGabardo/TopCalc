@@ -131,14 +131,14 @@
 				android:orientation="horizontal">
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "^2"
-				    myapp:type = "BINARY_OPERATOR"
+				    myapp:type = "BIN_OP_WITH_CONST_RIGHT"
 					android:id="@+id/xpow2" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
 					android:text="x²" />
 
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "^3"
-				    myapp:type = "BINARY_OPERATOR"
+				    myapp:type = "BIN_OP_WITH_CONST_RIGHT"
 					android:id="@+id/xpow3" android:layout_height="match_parent"
 					android:layout_width="0dp" android:layout_weight="1" android:text="x³" />
 			</LinearLayout>
@@ -147,15 +147,15 @@
 				android:layout_weight="1" android:background="#c7cdc8"
 				android:orientation="horizontal">
 				<pnj.project.topcalc.TCTermButton
-				    myapp:term = "sqrt("
-				    myapp:type = "BINARY_OPERATOR"
+				    myapp:term = "^(1/2)"
+				    myapp:type = "BIN_OP_WITH_CONST_RIGHT"
 					android:id="@+id/sqrt" android:layout_width="0dp"
 					android:layout_height="match_parent" android:layout_weight="1"
 					android:text="√x" />
 
 				<pnj.project.topcalc.TCTermButton
 				    myapp:term = "^(1/3)"
-				    myapp:type = "BINARY_OPERATOR"
+				    myapp:type = "BIN_OP_WITH_CONST_RIGHT"
 					android:id="@+id/thirdrt" android:layout_height="match_parent"
 					android:layout_width="0dp" android:layout_weight="1" android:text="³√x" />
 			</LinearLayout>
@@ -238,7 +238,7 @@
 
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "exp^"
-					    myapp:type = "BINARY_OPERATOR"
+					    myapp:type = "BIN_OP_WITH_CONST_LEFT"
 					    android:id="@+id/epowx"
 					    android:layout_width="0dp"
 					    android:layout_height="match_parent"
@@ -248,7 +248,7 @@
 
 					<pnj.project.topcalc.TCTermButton
 					    myapp:term = "10^"
-					    myapp:type = "BINARY_OPERATOR"
+					    myapp:type = "BIN_OP_WITH_CONST_RIGHT"
 						android:id="@+id/tenpown" android:layout_height="match_parent"
 						android:layout_width="0dp" android:layout_weight="1" android:text="10ⁿ" />
 

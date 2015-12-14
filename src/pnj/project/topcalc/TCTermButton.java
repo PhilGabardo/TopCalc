@@ -42,7 +42,8 @@ public class TCTermButton extends TCButton{
 	}
 
 	public enum Type{
-		UNARY_OPERATOR(0), BINARY_OPERATOR(1), DECIMAL(2), NUMBER(3), MINUS_OPERATOR(4), LEFT_BRACKET(5), RIGHT_BRACKET(6);
+		UNARY_OPERATOR(0), BINARY_OPERATOR(1), DECIMAL(2), NUMBER(3), MINUS_OPERATOR(4), LEFT_BRACKET(5), RIGHT_BRACKET(6), 
+		BIN_OP_WITH_CONST_RIGHT(7), BIN_OP_WITH_CONST_LEFT(8);
 		int id;
 		Type(int id) {
 	        this.id = id;
@@ -62,13 +63,16 @@ public class TCTermButton extends TCButton{
 		Type lastType = Calculator.currentCalculation.getLastType();
 		Log.e("LASTTYPE2", String.valueOf(lastType));
 		if (lastType == null){
-			if (type == Type.RIGHT_BRACKET){
+			if (type == Type.RIGHT_BRACKET || type == Type.BIN_OP_WITH_CONST_RIGHT || type == Type.BINARY_OPERATOR){
 				return false;
 			}
 			return true;
 		}
 		if (type == Type.UNARY_OPERATOR){
 			if (lastType == Type.NUMBER){
+				return false;
+			}
+			if (lastType == Type.BIN_OP_WITH_CONST_RIGHT){
 				return false;
 			}
 			if (lastType == Type.RIGHT_BRACKET){
@@ -81,6 +85,9 @@ public class TCTermButton extends TCButton{
 		}
 		if (type == Type.BINARY_OPERATOR){
 			if (lastType == Type.UNARY_OPERATOR){
+				return false;
+			}
+			if (lastType == Type.BIN_OP_WITH_CONST_LEFT){
 				return false;
 			}
 			if (lastType == Type.BINARY_OPERATOR){
@@ -122,6 +129,9 @@ public class TCTermButton extends TCButton{
 			if (lastType == Type.NUMBER){
 				return false;
 			}
+			if (lastType == Type.BIN_OP_WITH_CONST_RIGHT){
+				return false;
+			}
 			if (lastType == Type.RIGHT_BRACKET){
 				return false;
 			}
@@ -129,6 +139,45 @@ public class TCTermButton extends TCButton{
 		}
 		if (type == Type.RIGHT_BRACKET){
 			if (lastType == Type.UNARY_OPERATOR){
+				return false;
+			}
+			if (lastType == Type.BIN_OP_WITH_CONST_LEFT){
+				return false;
+			}
+			if (lastType == Type.BINARY_OPERATOR){
+				return false;
+			}
+			if (lastType == Type.DECIMAL){
+				return false;
+			}
+			if (lastType == Type.MINUS_OPERATOR){
+				return false;
+			}
+			if (lastType == Type.LEFT_BRACKET){
+				return false;
+			}
+			return true;
+		}
+		if (type == Type.BIN_OP_WITH_CONST_LEFT){
+			if (lastType == Type.NUMBER){
+				return false;
+			}
+			if (lastType == Type.BIN_OP_WITH_CONST_RIGHT){
+				return false;
+			}
+			if (lastType == Type.RIGHT_BRACKET){
+				return false;
+			}
+			if (lastType == Type.DECIMAL){
+				return false;
+			}
+			return true;
+		}
+		if (type == Type.BIN_OP_WITH_CONST_RIGHT){
+			if (lastType == Type.UNARY_OPERATOR){
+				return false;
+			}
+			if (lastType == Type.BIN_OP_WITH_CONST_LEFT){
 				return false;
 			}
 			if (lastType == Type.BINARY_OPERATOR){

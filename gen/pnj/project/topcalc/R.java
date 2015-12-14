@@ -46,6 +46,8 @@ containing a value of this type.
 <tr><td><code>MINUS_OPERATOR</code></td><td>4</td><td></td></tr>
 <tr><td><code>LEFT_BRACKET</code></td><td>5</td><td></td></tr>
 <tr><td><code>RIGHT_BRACKET</code></td><td>6</td><td></td></tr>
+<tr><td><code>BIN_OP_WITH_CONST_RIGHT</code></td><td>7</td><td></td></tr>
+<tr><td><code>BIN_OP_WITH_CONST_LEFT</code></td><td>8</td><td></td></tr>
 </table>
          */
         public static final int type=0x7f010002;
@@ -66,91 +68,93 @@ containing a value of this type.
         public static final int nth=0x7f020002;
     }
     public static final class id {
-        public static final int AC=0x7f04003c;
-        public static final int ACDel=0x7f040038;
-        public static final int AnswerButton=0x7f040025;
+        public static final int AC=0x7f04003e;
+        public static final int ACDel=0x7f04003a;
+        public static final int AnswerButton=0x7f040027;
         public static final int BINARY_OPERATOR=0x7f040001;
-        public static final int Col6=0x7f04003a;
-        public static final int Col8=0x7f040048;
+        public static final int BIN_OP_WITH_CONST_LEFT=0x7f040008;
+        public static final int BIN_OP_WITH_CONST_RIGHT=0x7f040007;
+        public static final int Col6=0x7f04003c;
+        public static final int Col8=0x7f04004a;
         public static final int DECIMAL=0x7f040002;
-        public static final int DisplayBox=0x7f040008;
-        public static final int DownButton=0x7f04000d;
-        public static final int HelpButton=0x7f040009;
-        public static final int History=0x7f04000a;
-        public static final int InputInterface=0x7f040013;
-        public static final int InputW2=0x7f040014;
-        public static final int InputW3=0x7f040024;
-        public static final int InputW4=0x7f040037;
-        public static final int LBracket=0x7f040016;
+        public static final int DisplayBox=0x7f04000a;
+        public static final int DownButton=0x7f04000f;
+        public static final int HelpButton=0x7f04000b;
+        public static final int History=0x7f04000c;
+        public static final int InputInterface=0x7f040015;
+        public static final int InputW2=0x7f040016;
+        public static final int InputW3=0x7f040026;
+        public static final int InputW4=0x7f040039;
+        public static final int LBracket=0x7f040018;
         public static final int LEFT_BRACKET=0x7f040005;
         public static final int MINUS_OPERATOR=0x7f040004;
-        public static final int MainCalc=0x7f040012;
+        public static final int MainCalc=0x7f040014;
         public static final int NUMBER=0x7f040003;
-        public static final int NoZero=0x7f040039;
-        public static final int NonAnsBlock=0x7f040026;
-        public static final int OuterCalc=0x7f040007;
-        public static final int PercDiv=0x7f040047;
-        public static final int PrevCalc=0x7f040010;
-        public static final int PrevnCurrentBox=0x7f04000e;
-        public static final int R2B2=0x7f040027;
-        public static final int R3B2=0x7f04002b;
-        public static final int R4B2=0x7f04002f;
-        public static final int R5B2=0x7f040033;
-        public static final int RBracket=0x7f040017;
+        public static final int NoZero=0x7f04003b;
+        public static final int NonAnsBlock=0x7f040028;
+        public static final int OuterCalc=0x7f040009;
+        public static final int PercDiv=0x7f040049;
+        public static final int PrevCalc=0x7f040012;
+        public static final int PrevnCurrentBox=0x7f040010;
+        public static final int R2B2=0x7f040029;
+        public static final int R3B2=0x7f04002d;
+        public static final int R4B2=0x7f040031;
+        public static final int R5B2=0x7f040035;
+        public static final int RBracket=0x7f040019;
         public static final int RIGHT_BRACKET=0x7f040006;
-        public static final int Row1=0x7f040015;
-        public static final int Row2=0x7f040018;
-        public static final int Row3=0x7f04001b;
-        public static final int Row4=0x7f04001e;
-        public static final int Row5=0x7f040021;
-        public static final int Slider=0x7f04000f;
+        public static final int Row1=0x7f040017;
+        public static final int Row2=0x7f04001a;
+        public static final int Row3=0x7f04001d;
+        public static final int Row4=0x7f040020;
+        public static final int Row5=0x7f040023;
+        public static final int Slider=0x7f040011;
         public static final int UNARY_OPERATOR=0x7f040000;
-        public static final int UpButton=0x7f04000b;
-        public static final int abs=0x7f040022;
-        public static final int action_settings=0x7f040054;
-        public static final int allac=0x7f04003b;
-        public static final int clock=0x7f04000c;
-        public static final int col7=0x7f040040;
-        public static final int col9=0x7f04004e;
-        public static final int cos=0x7f040030;
-        public static final int cosinv=0x7f040034;
-        public static final int decimal=0x7f04004d;
-        public static final int delete=0x7f040042;
-        public static final int deleteit=0x7f040041;
-        public static final int divide=0x7f04004f;
-        public static final int eight=0x7f040043;
-        public static final int epowx=0x7f040029;
-        public static final int equals=0x7f040053;
-        public static final int factorial=0x7f04001f;
-        public static final int five=0x7f040044;
-        public static final int four=0x7f04003e;
-        public static final int ln=0x7f04002d;
-        public static final int log=0x7f04002e;
-        public static final int minus=0x7f040051;
-        public static final int mod=0x7f040032;
-        public static final int multiply=0x7f040050;
-        public static final int nine=0x7f04004a;
-        public static final int one=0x7f04003f;
-        public static final int percent=0x7f040049;
-        public static final int pi=0x7f040036;
-        public static final int plus=0x7f040052;
-        public static final int seven=0x7f04003d;
-        public static final int sin=0x7f040020;
-        public static final int sinInv=0x7f040023;
-        public static final int six=0x7f04004b;
-        public static final int sqrt=0x7f04001c;
-        public static final int tan=0x7f040031;
-        public static final int taninv=0x7f040035;
-        public static final int tenpown=0x7f04002a;
-        public static final int theanswerbox=0x7f040011;
-        public static final int thirdrt=0x7f04001d;
-        public static final int three=0x7f04004c;
-        public static final int two=0x7f040045;
-        public static final int xpow2=0x7f040019;
-        public static final int xpow3=0x7f04001a;
-        public static final int xpown=0x7f040028;
-        public static final int xrty=0x7f04002c;
-        public static final int zero=0x7f040046;
+        public static final int UpButton=0x7f04000d;
+        public static final int abs=0x7f040024;
+        public static final int action_settings=0x7f040056;
+        public static final int allac=0x7f04003d;
+        public static final int clock=0x7f04000e;
+        public static final int col7=0x7f040042;
+        public static final int col9=0x7f040050;
+        public static final int cos=0x7f040032;
+        public static final int cosinv=0x7f040036;
+        public static final int decimal=0x7f04004f;
+        public static final int delete=0x7f040044;
+        public static final int deleteit=0x7f040043;
+        public static final int divide=0x7f040051;
+        public static final int eight=0x7f040045;
+        public static final int epowx=0x7f04002b;
+        public static final int equals=0x7f040055;
+        public static final int factorial=0x7f040021;
+        public static final int five=0x7f040046;
+        public static final int four=0x7f040040;
+        public static final int ln=0x7f04002f;
+        public static final int log=0x7f040030;
+        public static final int minus=0x7f040053;
+        public static final int mod=0x7f040034;
+        public static final int multiply=0x7f040052;
+        public static final int nine=0x7f04004c;
+        public static final int one=0x7f040041;
+        public static final int percent=0x7f04004b;
+        public static final int pi=0x7f040038;
+        public static final int plus=0x7f040054;
+        public static final int seven=0x7f04003f;
+        public static final int sin=0x7f040022;
+        public static final int sinInv=0x7f040025;
+        public static final int six=0x7f04004d;
+        public static final int sqrt=0x7f04001e;
+        public static final int tan=0x7f040033;
+        public static final int taninv=0x7f040037;
+        public static final int tenpown=0x7f04002c;
+        public static final int theanswerbox=0x7f040013;
+        public static final int thirdrt=0x7f04001f;
+        public static final int three=0x7f04004e;
+        public static final int two=0x7f040047;
+        public static final int xpow2=0x7f04001b;
+        public static final int xpow3=0x7f04001c;
+        public static final int xpown=0x7f04002a;
+        public static final int xrty=0x7f04002e;
+        public static final int zero=0x7f040048;
     }
     public static final class layout {
         public static final int calculator_layout=0x7f030000;
@@ -284,6 +288,8 @@ containing a value of this type.
 <tr><td><code>MINUS_OPERATOR</code></td><td>4</td><td></td></tr>
 <tr><td><code>LEFT_BRACKET</code></td><td>5</td><td></td></tr>
 <tr><td><code>RIGHT_BRACKET</code></td><td>6</td><td></td></tr>
+<tr><td><code>BIN_OP_WITH_CONST_RIGHT</code></td><td>7</td><td></td></tr>
+<tr><td><code>BIN_OP_WITH_CONST_LEFT</code></td><td>8</td><td></td></tr>
 </table>
           @attr name pnj.project.topcalc:type
         */

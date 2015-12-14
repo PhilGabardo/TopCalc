@@ -11,6 +11,8 @@
         <enum name="MINUS_OPERATOR" value="4"/>
         <enum name="LEFT_BRACKET" value="5"/>
         <enum name="RIGHT_BRACKET" value="6"/>
+        <enum name="BIN_OP_WITH_CONST_RIGHT" value="7"/>
+        <enum name="BIN_OP_WITH_CONST_LEFT" value="8"/>
    		</attr>
     </declare-styleable> 
     <declare-styleable name="HistoryControlButton">
