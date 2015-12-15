@@ -112,7 +112,11 @@ public class TCCurrentCalculation extends TextView{
 	
 	public double parse() throws SyntaxException{
 		Expr expr;
+<<<<<<< Updated upstream
 		expr = Parser.parse(toScreen().replace(" ", "").replace("x", "*").replace("\u03c0", "pi")); 
+=======
+		expr = Parser.parse(toScreen().replace(" ", "").replace("x", "*").replace("\u03C0", "pi")); 
+>>>>>>> Stashed changes
 		return expr.value();
 	}
 
