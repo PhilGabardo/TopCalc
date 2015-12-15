@@ -1,6 +1,5 @@
 package pnj.project.topcalc;
 
-import android.view.View;
 
 public class RefreshButtonEnabling {
 	public static void refresh(){

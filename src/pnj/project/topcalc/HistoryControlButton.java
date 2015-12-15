@@ -1,13 +1,11 @@
 package pnj.project.topcalc;
 
-import pnj.project.topcalc.TCTermButton.Type;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class HistoryControlButton extends Button{
 	

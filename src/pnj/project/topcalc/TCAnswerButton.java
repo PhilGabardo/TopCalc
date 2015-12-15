@@ -1,6 +1,5 @@
 package pnj.project.topcalc;
 
-import pnj.project.topcalc.TCTermButton.Type;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.util.AttributeSet;
